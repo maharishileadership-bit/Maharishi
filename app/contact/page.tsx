@@ -60,21 +60,7 @@ export default async function ContactPage({
                   </p>
             </div>
 
-            <div className="mt-8 flex justify-center gap-3 ">
-              <a
-                href="#enquiry"
-                className="rounded-full bg-[hsl(var(--sky)/0.45)] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary"
-              >
-                Enquire Now
-              </a>
-              <a
-                href="#booking"
-                className="book-pill ml-2 inline-flex items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
-              >
-                <span className="relative z-10">Book a Conversation</span>
-              </a>
-              
-            </div>
+            
           </div>
         </section>
 
