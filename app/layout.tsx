@@ -61,19 +61,19 @@ export const metadata: Metadata = {
     siteName: "Maharishi Center for Leadership",
     images: [
       {
-        url: "/images/hero-meditation-tree.png",
+        url: "/images/man-leader.webp",
         width: 1200,
         height: 630,
         alt: "Maharishi Center for Leadership",
       },
-    ],
+    ],    
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/hero-meditation-tree.png"],
+    images: ["/images/man-leader.webp"],
   },
   robots: {
     index: true,
