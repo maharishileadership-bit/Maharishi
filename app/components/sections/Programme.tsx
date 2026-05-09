@@ -58,9 +58,9 @@ export function Programme() {
               Structure
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl text-primary leading-[1.05] font-light mb-4">
-              Four Months.{" "}
+              One Program{" "}
               <em className="italic text-[hsl(var(--peach-deep))]">
-                Measurably Sharper.
+                Lifetime of Benefits
               </em>
             </h2>
             <p className="text-sm uppercase tracking-[0.2em] text-primary/55 font-medium mb-12">
@@ -75,10 +75,10 @@ export function Programme() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="flex gap-8 py-8 md:py-14 border-b border-border last:border-b-0"
+                  className="flex gap-4 sm:gap-8 py-8 md:py-14 border-b border-border last:border-b-0"
                 >
                   <div className="flex flex-col items-center w-12 shrink-0">
-                    <div className="w-11 h-11 rounded-full bg-primary text-primary-foreground font-serif text-2xl font-light flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-primary text-primary-foreground font-serif text-xl sm:text-2xl font-light flex items-center justify-center">
                       {phase.num}
                     </div>
                     {index < phases.length - 1 && (
@@ -86,7 +86,7 @@ export function Programme() {
                     )}
                   </div>
                   <div>
-                    <h3 className="font-medium text-primary text-2xl font-semibold mb-2">
+                    <h3 className="font-medium text-primary text-xl sm:text-2xl font-semibold mb-2">
                       {phase.title}
                     </h3>
                     <p className="text-primary/65 leading-[1.75] text-[15px]">
@@ -120,10 +120,9 @@ export function Programme() {
                     >
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div
-                          className="relative overflow-hidden rounded-full bg-[hsl(var(--sky)/0.4)]"
+                          className="relative overflow-hidden rounded-full w-[250px] h-[250px] sm:w-[360px] sm:h-[360px] bg-[hsl(var(--sky)/0.4)]"
                           style={{
-                            width: 360,
-                            height: 360,
+                            
                             animation: "breathe 6s ease-in-out infinite",
                           }}
                         ><Image
@@ -136,10 +135,9 @@ export function Programme() {
                       </div>
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div
-                          className="rounded-full border border-primary/15"
+                          className="rounded-full border border-primary/15 w-[300px] h-[300px] sm:w-[440px] sm:h-[440px]"
                           style={{
-                            width: 440,
-                            height: 440,
+                           
                             animation: "ringPulse 6s ease-in-out 1s infinite",
                           }}
                         />

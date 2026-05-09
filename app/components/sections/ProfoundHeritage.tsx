@@ -62,7 +62,7 @@ export function ProfoundHeritage() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mb-16"
+          className="mx-auto "
           style={{ maxWidth: 820 }}
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}

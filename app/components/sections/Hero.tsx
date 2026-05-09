@@ -158,7 +158,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Sharp base image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-85"
           style={{
             backgroundImage: "url(/images/Leader-maharishi.png)",
             backgroundPosition: "center 78%",

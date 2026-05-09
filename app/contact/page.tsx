@@ -22,7 +22,7 @@ export default async function ContactPage({
     <div className="min-h-[100dvh] w-full flex flex-col bg-white text-foreground">
       <Navbar />
       <main className="flex-1">
-        <section className="pt-36 pb-12 md:pt-44 md:pb-16">
+        <section className="pt-30 pb-5 md:pt-36 md:pb-8">
           <div className="container mx-auto px-6 md:px-12">
             <div className="mx-auto max-w-4xl text-center">
               <p className="text-[11px] uppercase tracking-[0.3em] text-[hsl(var(--peach-deep))] font-medium">
@@ -52,9 +52,9 @@ export default async function ContactPage({
               </a>
               <a
                 href="#booking"
-                className="rounded-full bg-primary px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white"
+                className="book-pill ml-2 inline-flex items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
               >
-                Book Intro Talk
+                <span className="relative z-10">Book Intro Talk</span>
               </a>
               
             </div>

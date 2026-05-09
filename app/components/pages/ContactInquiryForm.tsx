@@ -115,7 +115,7 @@ export function ContactInquiryForm({
 
         <div className="grid gap-5 md:grid-cols-2">
           <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary/55">
+            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary">
               Name
             </span>
             <input
@@ -128,7 +128,7 @@ export function ContactInquiryForm({
             />
           </label>
           <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary/55">
+            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary">
               Email
             </span>
             <input
@@ -144,7 +144,7 @@ export function ContactInquiryForm({
 
         <div className="grid gap-5 md:grid-cols-2">
           <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary/55">
+            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary">
               Organization
             </span>
             <input
@@ -158,7 +158,7 @@ export function ContactInquiryForm({
             />
           </label>
           <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary/55">
+            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary">
               Role / Title
             </span>
             <input
@@ -172,7 +172,7 @@ export function ContactInquiryForm({
         </div>
 
         <label className="block">
-          <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary/55">
+          <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary">
             Message
           </span>
           <textarea
@@ -186,14 +186,15 @@ export function ContactInquiryForm({
             placeholder={activeInquiry.prompt}
           />
         </label>
-
+        <div className="flex justify-center">
         <button
           type="submit"
           disabled={submitting}
-          className="w-full rounded-full bg-[hsl(var(--peach))] px-6 py-4 text-sm font-medium uppercase tracking-[0.2em] text-primary hover:bg-[hsl(var(--peach-deep))] hover:text-primary-foreground"
+          className=" max-w-md   px-6 py-4 book-pill ml-2 inline-flex items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
         >
-          {submitting ? "Submitting..." : "Submit enquiry"}
+          <span className="relative z-10">{submitting ? "Submitting..." : "Submit enquiry"}</span>
         </button>
+        </div>
         {status.type !== "idle" && (
           <p
             className={`text-sm ${

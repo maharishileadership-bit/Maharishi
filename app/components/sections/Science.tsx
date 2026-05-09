@@ -65,7 +65,7 @@ export function Science() {
 
         </div>
 
-        <div className="mb-20 mt-16 grid grid-cols-2 gap-px bg-primary-foreground/[0.08] md:grid-cols-3">
+        <div className="mb-20 mt-16 grid grid-cols-1 sm:grid-cols-2 gap-px bg-primary-foreground/[0.08] md:grid-cols-3">
           {stats.map((s, i) => (
             <motion.div
               key={s.num}
@@ -73,9 +73,9 @@ export function Science() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.06 }}
-              className="bg-primary p-8 transition-colors hover:bg-[hsl(var(--peach)/0.08)] md:p-10"
+              className="bg-primary p-7 transition-colors hover:bg-[hsl(var(--peach)/0.08)] md:p-10"
             >
-              <p className="mb-4 font-serif text-5xl font-light leading-none text-[hsl(var(--peach))] md:text-6xl">
+              <p className="mb-4 font-serif text-4xl sm:text-5xl font-light leading-none text-[hsl(var(--peach))] md:text-6xl">
                 {s.num}
               </p>
               <p className="max-w-[220px] text-sm leading-relaxed text-primary-foreground/65">
