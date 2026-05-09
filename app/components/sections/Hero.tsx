@@ -392,7 +392,7 @@ export default function Hero() {
                 className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
                 data-testid="nav-cta"
               >
-                <span className="relative z-10">Book an Intro Talk</span>
+                <span className="relative z-10">Book a Conversation</span>
                 <span className="book-pill-dot relative z-10" />
               </Link>
 

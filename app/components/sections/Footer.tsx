@@ -21,7 +21,7 @@ export function Footer() {
                 Maharishi Center 
                 {" "}
               <em
-                className={`not-italic text-primary/60`}
+                className={`not-italic text-[hsl(var(--peach))]`}
               >
                 for Leadership
               </em>
@@ -44,8 +44,16 @@ export function Footer() {
                 {contactName}
               </p>
               <a
+                href={`https://mail.google.com/mail/?view=cm&to=${contactEmail}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden text-[hsl(var(--peach))] text-sm hover:underline md:inline"
+              >
+                {contactEmail}
+              </a>
+              <a
                 href={`mailto:${contactEmail}`}
-                className="text-[hsl(var(--peach))] text-sm hover:underline"
+                className="text-[hsl(var(--peach))] text-sm hover:underline md:hidden"
               >
                 {contactEmail}
               </a>

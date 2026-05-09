@@ -61,7 +61,7 @@ export function CTA() {
             className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border  px-10 py-4 text-sm font-semibold uppercase bg-white text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
             data-testid="nav-cta"
           >
-            <span className="relative z-10">Book a Intro Talk</span>
+            <span className="relative z-10">Book a Conversation</span>
             <span className="book-pill-dot relative z-10" />
           </Link>
           {/* <Link

@@ -10,7 +10,7 @@ const quotes = [
     role: "Founder & Co-CIO, Bridgewater Associates",
     logo: "/logos/Bridgewater_Associates.jpg",
     logoAlt: "Bridgewater Associates logo",
-    avatar: "/images/testimonial-ray-dalio.png",
+    avatar: "/images/Benefits-ray-dalio.png",
   },
   {
     text: "My creativity improved. I can solve problems faster and more easily. I can focus for longer periods of time - and I am happier.",
@@ -25,7 +25,7 @@ const quotes = [
     role: "Chairman & MD, JetSynthesys Pvt. Ltd.",
     logo: "/logos/JetSynthesys.jpg",
     logoAlt: "JetSynthesys logo",
-    avatar: "/images/testimonial-rajan-navani.png",
+    avatar: "/images/testimonial-rajan-navani.jpg",
   },
 ];
 
@@ -44,7 +44,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden bg-primary py-18 md:py-30 text-primary-foreground "
+      className="relative overflow-hidden bg-[hsl(var(--primary)/0.92)] py-18 md:py-30 text-primary-foreground "
     >
       <div
         aria-hidden
@@ -89,17 +89,19 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="bg-primary p-5 md:p-10 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
+              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-10 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
             >
-              <div className="mb-8 flex h-14 w-32 items-center justify-center rounded-2xl bg-white px-4 shadow-[0_20px_36px_-28px_rgba(255,255,255,0.6)]">
-                <Image
-                  src={quote.logo}
-                  alt={quote.logoAlt}
-                  width={180}
-                  height={90}
-                  className="h-auto max-h-8 w-auto max-w-full object-contain"
-                />
-              </div>
+              {quote.avatar ? (
+                <div className="mb-6">
+                  <Image
+                    src={quote.avatar}
+                    alt={`${quote.name} portrait`}
+                    width={88}
+                    height={88}
+                    className="h-34 w-60 mx-auto object-cover ring-2 "
+                  />
+                </div>
+              ) : null}
               <div className="">
               <span className="font-serif text-xl sm:text-2xl md:text-3xl text-[hsl(var(--peach))] leading-none mb-2">
                 &ldquo;
@@ -112,18 +114,16 @@ export function Testimonials() {
               </span>
               </div>
 
-              <div className="mt-2 sm:mt-4 md:mt-6">
-              {quote.avatar ? (
-                <div className="mb-3">
-                  <Image
-                    src={quote.avatar}
-                    alt={`${quote.name} portrait`}
-                    width={56}
-                    height={56}
-                    className="h-14 w-14 rounded-full object-cover ring-2 ring-[hsl(var(--peach)/0.7)]"
-                  />
-                </div>
-              ) : null}
+              <div className="mt-4 sm:mt-6 md:mt-8">
+              <div className="mb-4 flex h-14 w-32 items-center justify-center rounded-2xl bg-white px-4 shadow-[0_20px_36px_-28px_rgba(255,255,255,0.6)]">
+                <Image
+                  src={quote.logo}
+                  alt={quote.logoAlt}
+                  width={180}
+                  height={90}
+                  className="h-auto max-h-8 w-auto max-w-full object-contain"
+                />
+              </div>
               <p className="text-[12px] uppercase tracking-[0.15em] text-[hsl(var(--peach))] font-medium">
                 {quote.name}
               </p>

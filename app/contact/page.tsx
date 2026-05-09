@@ -32,14 +32,31 @@ export default async function ContactPage({
                     id="consultation-drawer-title"
                     className="mt-5 font-serif text-4xl font-light leading-[1.06] text-primary sm:text-5xl"
                   >
-                    Connect with{" "}
+                    Let&apos;s Start the{" "}
                     <em className="italic text-[hsl(var(--peach-deep))]">
-                      Us
+                      Conversation
                     </em>
                   </h2>
                   <p className="mt-4 max-w-2xl mx-auto text-sm leading-[1.9] text-primary/68 sm:text-base">
-                    Choose a time that works for you and book your consultation
-                    directly. 
+                    Tell us about your goals, ideas, or challenges through the enquiry form, and our team will get back to you to schedule a discussion.
+                  </p>
+                  <p className="mt-3 max-w-2xl mx-auto text-sm leading-[1.9] text-primary/68 sm:text-base">
+                    Prefer email? Reach out directly at{" "}
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&to=chandan.mehta@tm.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hidden font-medium text-primary underline-offset-4 hover:underline md:inline"
+                    >
+                      chandan.mehta@tm.org
+                    </a>
+                    <a
+                      href="mailto:chandan.mehta@tm.org"
+                      className="font-medium text-primary underline-offset-4 hover:underline md:hidden"
+                    >
+                      chandan.mehta@tm.org
+                    </a>{" "}
+                    and we&apos;ll be happy to assist you.
                   </p>
             </div>
 
@@ -54,7 +71,7 @@ export default async function ContactPage({
                 href="#booking"
                 className="book-pill ml-2 inline-flex items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
               >
-                <span className="relative z-10">Book Intro Talk</span>
+                <span className="relative z-10">Book a Conversation</span>
               </a>
               
             </div>
