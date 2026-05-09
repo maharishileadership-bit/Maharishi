@@ -69,7 +69,7 @@ export default async function ContactPage({
               <article id="enquiry" className="w-full self-center rounded-[2rem] bg-transparent max-w-4xl mx-auto">
                 <ContactInquiryForm initialType={initialType} />
               </article>
-              <article
+              {/* <article
                 id="booking"
                 className="w-full self-center rounded-[2rem] bg-card p-6 shadow-[0_22px_60px_-40px_rgba(7,29,64,0.28)] md:p-8 max-w-4xl mx-auto"
               >
@@ -90,7 +90,7 @@ export default async function ContactPage({
                     className=" w-full h-full"
                   />
                 </div>
-              </article>
+              </article> */}
             </div>
           </div>
         </section>

@@ -13,8 +13,6 @@ type ContactInquiryFormProps = {
 type ContactFormState = {
   name: string;
   email: string;
-  organization: string;
-  role: string;
   message: string;
   website: string;
 };
@@ -26,8 +24,6 @@ export function ContactInquiryForm({
   const [form, setForm] = useState<ContactFormState>({
     name: "",
     email: "",
-    organization: "",
-    role: "",
     message: "",
     website: "",
   });
@@ -82,8 +78,6 @@ export function ContactInquiryForm({
       setForm({
         name: "",
         email: "",
-        organization: "",
-        role: "",
         message: "",
         website: "",
       });
@@ -138,35 +132,6 @@ export function ContactInquiryForm({
               onChange={(event) => handleFieldChange("email", event.target.value)}
               className="w-full rounded-[1rem] bg-white px-4 py-3.5 text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))] placeholder:text-primary/45"
               placeholder="name@company.com"
-            />
-          </label>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-2">
-          <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary font-semibold">
-              Organization
-            </span>
-            <input
-              type="text"
-              value={form.organization}
-              onChange={(event) =>
-                handleFieldChange("organization", event.target.value)
-              }
-              className="w-full rounded-[1rem] bg-white px-4 py-3.5 text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))] placeholder:text-primary/45"
-              placeholder="Company or institution"
-            />
-          </label>
-          <label className="block">
-            <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-primary font-semibold">
-              Role / Title
-            </span>
-            <input
-              type="text"
-              value={form.role}
-              onChange={(event) => handleFieldChange("role", event.target.value)}
-              className="w-full rounded-[1rem] bg-white px-4 py-3.5 text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))] placeholder:text-primary/45"
-              placeholder="Founder, CHRO, VP, Manager..."
             />
           </label>
         </div>

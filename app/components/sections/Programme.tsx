@@ -126,7 +126,7 @@ export function Programme() {
                             animation: "breathe 6s ease-in-out infinite",
                           }}
                         ><Image
-                                         src="/images/Programme-Structure-Maharishi-Leadership.jpg"
+                                         src="/images/ken-gunsberger.png"
                                          alt=""
                                          fill
                                          sizes="(min-width: 1024px) 26rem, 100vw"

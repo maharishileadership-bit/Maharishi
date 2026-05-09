@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { openCalendlyPopup } from "@/app/lib/calendly";
+import Link from "next/link";
 
 export function CTA() {
   return (
@@ -56,15 +56,14 @@ export function CTA() {
           transition={{ duration: 0.9, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button
-              type="button"
-              onClick={openCalendlyPopup}
-              className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border  px-10 py-4 text-sm font-semibold uppercase bg-white text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
-              data-testid="nav-cta"
-            >
-              <span className="relative z-10">Book a Intro Talk</span>
-              <span className="book-pill-dot relative z-10" />
-            </button>
+          <Link
+            href="/contact"
+            className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border  px-10 py-4 text-sm font-semibold uppercase bg-white text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
+            data-testid="nav-cta"
+          >
+            <span className="relative z-10">Book a Intro Talk</span>
+            <span className="book-pill-dot relative z-10" />
+          </Link>
           {/* <Link
             href={getContactHref("corporate-team")}
             className="px-10 py-4 rounded-full border border-primary-foreground/30 text-primary-foreground/80 text-sm uppercase tracking-[0.2em] font-medium hover:border-[hsl(var(--peach))] hover:text-[hsl(var(--peach))] transition-colors w-full sm:w-auto text-center"

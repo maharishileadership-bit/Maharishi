@@ -9,7 +9,7 @@ import {
   useSpring,
   useMotionValueEvent,
 } from "framer-motion";
-import { openCalendlyPopup } from "@/app/lib/calendly";
+import Link from "next/link";
 
 const TRUST_ITEMS = [
   "50+ years of research",
@@ -387,15 +387,14 @@ export default function Hero() {
             </motion.p>
 
             <div className="mb-8 flex flex-col items-center gap-4 sm:flex-row">
-              <button
-              type="button"
-              onClick={openCalendlyPopup}
-              className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
-              data-testid="nav-cta"
-            >
-              <span className="relative z-10">Book an Intro Talk</span>
-              <span className="book-pill-dot relative z-10" />
-            </button>
+              <Link
+                href="/contact"
+                className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
+                data-testid="nav-cta"
+              >
+                <span className="relative z-10">Book an Intro Talk</span>
+                <span className="book-pill-dot relative z-10" />
+              </Link>
 
               <motion.a
                 type="button"

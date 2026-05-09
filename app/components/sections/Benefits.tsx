@@ -138,15 +138,15 @@ export function Benefits() {
     <section id="benefits" className="bg-background pt-24 pb-14 py-18 md:py-30">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-12">
-        <div>
-            <Image src="/images/Benefits-Maharishi.jpg" width={600} height={400} alt="Executive in a boardroom with team members in the background" />
+        <div className="h-96 overflow-hidden w-full lg:w-[40%]">
+            <Image src="/images/rohit-gulati.png" width={600} height={400} alt="Executive in a boardroom with team members in the background" className="w-auto h-full mx-auto"/>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="max-w-3xl "
+          className="max-w-3xl w-full lg:w-[70%] "
         >
           <p className="flex items-center gap-3 text-[hsl(var(--peach-deep))] uppercase text-[11px] tracking-[0.3em] font-medium mb-6">
             <span className="w-7 h-px bg-[hsl(var(--peach-deep))]" /> The Benefits

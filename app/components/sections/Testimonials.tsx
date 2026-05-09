@@ -10,6 +10,7 @@ const quotes = [
     role: "Founder & Co-CIO, Bridgewater Associates",
     logo: "/logos/Bridgewater_Associates.jpg",
     logoAlt: "Bridgewater Associates logo",
+    avatar: "/images/testimonial-ray-dalio.png",
   },
   {
     text: "My creativity improved. I can solve problems faster and more easily. I can focus for longer periods of time - and I am happier.",
@@ -24,6 +25,7 @@ const quotes = [
     role: "Chairman & MD, JetSynthesys Pvt. Ltd.",
     logo: "/logos/JetSynthesys.jpg",
     logoAlt: "JetSynthesys logo",
+    avatar: "/images/testimonial-rajan-navani.png",
   },
 ];
 
@@ -111,6 +113,17 @@ export function Testimonials() {
               </div>
 
               <div className="mt-2 sm:mt-4 md:mt-6">
+              {quote.avatar ? (
+                <div className="mb-3">
+                  <Image
+                    src={quote.avatar}
+                    alt={`${quote.name} portrait`}
+                    width={56}
+                    height={56}
+                    className="h-14 w-14 rounded-full object-cover ring-2 ring-[hsl(var(--peach)/0.7)]"
+                  />
+                </div>
+              ) : null}
               <p className="text-[12px] uppercase tracking-[0.15em] text-[hsl(var(--peach))] font-medium">
                 {quote.name}
               </p>
