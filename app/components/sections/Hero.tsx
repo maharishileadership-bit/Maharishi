@@ -99,7 +99,7 @@ export default function Hero() {
   const vignetteOpacity = useTransform(
     smooth,
     [0, 0.35, 0.68, 0.82],
-    [0.5, 0.65, 0.88, 0]
+    [0.58, 0.72, 0.93, 0]
   );
 
   const whiteOverlay = useTransform(smooth, [0.72, 0.97], [0, 1]);
@@ -158,9 +158,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Sharp base image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-85"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{
-            backgroundImage: "url(/images/Leader-maharishi.png)",
+            backgroundImage: "url(/images/man-leader.webp)",
             backgroundPosition: "center 78%",
           }}
         />
@@ -170,7 +170,7 @@ export default function Hero() {
           ref={blurLayerRef}
           className="absolute  inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/images/Leader-maharishi.png)",
+            backgroundImage: "url(/images/man-leader.webp)",
             backgroundPosition: "center 78%",
             filter: "blur(26px)",
             transform: "translateZ(0) scale(1.06)",

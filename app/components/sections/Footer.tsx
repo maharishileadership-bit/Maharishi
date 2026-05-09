@@ -93,7 +93,7 @@ export function Footer() {
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
           <p className="text-[11px] text-primary-foreground/30 uppercase tracking-widest">
             &copy; {new Date().getFullYear()} Maharishi Center for Leadership.
-            All rights reserved.
+            All rights reserved. <span className="text-gray-400"> Developed by <Link href="https://www.arevei.com/" className="text-green-500"> Arevei</Link> </span>
           </p>
           <p className="text-[11px] text-primary-foreground/30 uppercase tracking-widest">
             Performance is not only what leaders do. It is how their brain

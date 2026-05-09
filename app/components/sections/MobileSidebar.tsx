@@ -85,10 +85,7 @@ export function MobileSidebar({
                   height={44}
                   className="h-11 w-11 shrink-0 rounded-full object-cover shadow-sm"
                 />
-                <span className="min-w-0 font-serif text-lg leading-tight tracking-tight">
-                  Maharishi{" "}
-                  <em className="not-italic text-primary/60">Leadership</em>
-                </span>
+                
               </Link>
 
               <button
@@ -127,7 +124,8 @@ export function MobileSidebar({
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="book-pill inline-flex w-full items-center justify-between rounded-full bg-[hsl(var(--cream)/0.96)] px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary shadow-[0_18px_50px_-28px_rgba(7,29,64,0.35)]"
+                className="book-pill inline-flex w-full items-center justify-between rounded-full  px-8 py-4 text-sm font-semibold bg-primary
+                text-white uppercase tracking-[0.2em] text-primary shadow-[0_18px_50px_-28px_rgba(7,29,64,0.35)]"
               >
                 <span className="relative z-10">Consult Now</span>
                 <span className="book-pill-dot relative z-10" />
