@@ -28,7 +28,7 @@ export function Science() {
   return (
     <section
       id="science"
-      className="relative overflow-hidden bg-primary py-18 md:py-30 text-primary-foreground "
+      className="relative overflow-hidden bg-[hsl(var(--primary)/0.92)] py-18 md:py-30 text-primary-foreground "
     >
       <div
         aria-hidden

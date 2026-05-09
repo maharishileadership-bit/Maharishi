@@ -7,7 +7,7 @@ export function CTA() {
   return (
     <section
       id="contact"
-      className="bg-primary text-primary-foreground py-26 md:py-36 text-center relative overflow-hidden"
+      className="bg-[hsl(var(--primary)/0.92)] text-primary-foreground py-26 md:py-36 text-center relative overflow-hidden"
     >
       <div
         aria-hidden
