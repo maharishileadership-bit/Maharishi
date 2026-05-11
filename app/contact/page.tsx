@@ -40,7 +40,7 @@ export default async function ContactPage({
                   <p className="mt-4 max-w-2xl mx-auto text-sm leading-[1.9] text-primary/68 sm:text-base">
                     Tell us about your goals, ideas, or challenges through the enquiry form, and our team will get back to you to schedule a discussion.
                   </p>
-                  <p className="mt-3 max-w-2xl mx-auto text-sm leading-[1.9] text-primary/68 sm:text-base">
+                  {/* <p className="mt-3 max-w-2xl mx-auto text-sm leading-[1.9] text-primary/68 sm:text-base">
                     Prefer email? Reach out directly at{" "}
                     <a
                       href="https://mail.google.com/mail/?view=cm&to=chandan.mehta@tm.org"
@@ -57,7 +57,7 @@ export default async function ContactPage({
                       chandan.mehta@tm.org
                     </a>{" "}
                     and we&apos;ll be happy to assist you.
-                  </p>
+                  </p> */}
             </div>
 
             
