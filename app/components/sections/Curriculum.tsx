@@ -71,7 +71,7 @@ export function Curriculum() {
   return (
     <section
       id="curriculum"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,hsl(var(--sky)/0.22)_0%,hsl(var(--background))_100%)] py-18 md:py-30"
+      className="relative overflow-hidden bg-[linear-gradient(180deg,hsl(var(--sky)/0.22)_0%,hsl(var(--background))_100%)] pt-18 pb-0 sm:py-18 md:py-30"
     >
       <div
         aria-hidden

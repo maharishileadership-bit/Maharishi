@@ -61,24 +61,15 @@ export function ProfoundHeritage() {
           </p>
         </motion.div>
 
-        <motion.div
-          className="mx-auto "
+<motion.div
+          className="mx-auto mb-8"
           style={{ maxWidth: 820 }}
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
         >
-          <div
-            className="relative rounded-2xl overflow-hidden shadow-2xl"
-            style={{
-              background: "hsl(var(--primary))",
-              border: "1px solid hsl(var(--peach-deep) / 0.22)",
-              boxShadow:
-                "0 32px 80px rgba(7,29,64,0.22), 0 0 0 1px hsl(var(--peach-deep) / 0.1)",
-            }}
-          >
-            <video
+        <video
               className="w-full h-auto"
               controls
               preload="metadata"
@@ -90,6 +81,33 @@ export function ProfoundHeritage() {
               />
               Your browser does not support the video tag.
             </video>
+            </motion.div>
+
+        <motion.div
+          className="mx-auto "
+          style={{ maxWidth: 820 }}
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
+        >
+          <div
+            className="relative  overflow-hidden shadow-2xl"
+            style={{
+              background: "hsl(var(--primary))",
+              border: "1px solid hsl(var(--peach-deep) / 0.22)",
+              boxShadow:
+                "0 32px 80px rgba(7,29,64,0.22), 0 0 0 1px hsl(var(--peach-deep) / 0.1)",
+            }}
+          >
+            <iframe
+              className="aspect-video w-full"
+              src="https://www.youtube.com/embed/q90vblzhccU?si=Zt35wYbCVfFfeDxC"
+              title="Our Profound Heritage video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
           </div>
         </motion.div>
       </div>

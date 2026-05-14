@@ -93,14 +93,30 @@ export default function RootLayout({
       className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} h-full bg-background`}
     >
       <body className="min-h-full flex flex-col text-foreground antialiased">
-        <link
+
+      <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9G7N260J6H"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9G7N260J6H');
+          `}
+        </Script>
+        {/* <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
         />
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
-        />
+        /> */}
+
         {/* <Script id="calendly-badge-init" strategy="afterInteractive">
           {`
             window.onload = function () {
