@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://maharishi-leadership.vercel.app";
@@ -90,6 +91,9 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} h-full bg-background`}
     >
+    <Head>
+      <meta name="google-site-verification" content="AuSHddI7bhNIDIvKB_X3iHHBe2bEMGY8nY4IvUn7O6o" />
+    </Head>
       <body className="min-h-full flex flex-col text-foreground antialiased">
 
         <Script
