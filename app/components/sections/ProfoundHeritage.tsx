@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { LiteYouTubeEmbed } from "./LiteYouTubeEmbed";
 
 export function ProfoundHeritage() {
   return (
@@ -72,7 +73,7 @@ export function ProfoundHeritage() {
         <video
               className="w-full h-auto"
               controls
-              preload="metadata"
+              preload="none"
               playsInline
             >
               <source
@@ -100,13 +101,9 @@ export function ProfoundHeritage() {
                 "0 32px 80px rgba(7,29,64,0.22), 0 0 0 1px hsl(var(--peach-deep) / 0.1)",
             }}
           >
-            <iframe
-              className="aspect-video w-full"
-              src="https://www.youtube.com/embed/q90vblzhccU?si=Zt35wYbCVfFfeDxC"
+            <LiteYouTubeEmbed
+              videoId="q90vblzhccU"
               title="Our Profound Heritage video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
             />
           </div>
         </motion.div>

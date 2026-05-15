@@ -8,7 +8,7 @@ const quotes = [
     text: "TM has given me greater creativity, centredness, and the ability to put things in perspective. It has been the single biggest influence on my life.",
     name: "Ray Dalio",
     role: "Founder & Co-CIO, Bridgewater Associates",
-    logo: "/logos/Bridgewater_Associates.jpg",
+    logo: "/logos/optimized/Bridgewater_Associates.webp",
     logoAlt: "Bridgewater Associates logo",
     avatar: "/images/Benefits-ray-dalio.png",
   },
@@ -16,28 +16,28 @@ const quotes = [
     text: "My creativity improved. I can solve problems faster and more easily. I can focus for longer periods of time - and I am happier.",
     name: "Rahul Vohra",
     role: "Founder & CEO, Superhuman",
-    logo: "/logos/Superhuman.png",
+    logo: "/logos/optimized/Superhuman.webp",
     logoAlt: "Superhuman logo",
   },
   {
     text: "It has given a boost to our overall creativity and performance. Health, well-being, clarity of mind, happiness, and calm have all improved. Significant benefits to myself and our team.",
     name: "Rajan Navani",
     role: "Chairman & MD, JetSynthesys Pvt. Ltd.",
-    logo: "/logos/JetSynthesys.jpg",
+    logo: "/logos/optimized/JetSynthesys.webp",
     logoAlt: "JetSynthesys logo",
     avatar: "/images/testimonial-rajan-navani.jpg",
   },
 ];
 
 const companies = [
-  { name: "Bridgewater Associates", logo: "/logos/Bridgewater_Associates.jpg" },
-  { name: "Superhuman", logo: "/logos/Superhuman.png" },
-  { name: "JetSynthesys", logo: "/logos/JetSynthesys.jpg" },
-  { name: "Google", logo: "/logos/google.png" },
-  { name: "IBM", logo: "/logos/ibm.jpg" },
-  { name: "Citadel", logo: "/logos/citadel.webp" },
-  { name: "Toyota", logo: "/logos/Toyota-logo.png" },
-  { name: "Tata Tea", logo: "/logos/tatatea.jpg" },
+  { name: "Bridgewater Associates", logo: "/logos/optimized/Bridgewater_Associates.webp" },
+  { name: "Superhuman", logo: "/logos/optimized/Superhuman.webp" },
+  { name: "JetSynthesys", logo: "/logos/optimized/JetSynthesys.webp" },
+  { name: "Google", logo: "/logos/optimized/google.webp" },
+  { name: "IBM", logo: "/logos/optimized/ibm.webp" },
+  { name: "Citadel", logo: "/logos/optimized/citadel.webp" },
+  { name: "Toyota", logo: "/logos/optimized/Toyota-logo.webp" },
+  { name: "Tata Tea", logo: "/logos/optimized/tatatea.webp" },
 ];
 
 export function Testimonials() {
@@ -119,8 +119,10 @@ export function Testimonials() {
                 <Image
                   src={quote.logo}
                   alt={quote.logoAlt}
-                  width={180}
-                  height={90}
+                  width={128}
+                  height={64}
+                  quality={72}
+                  sizes="128px"
                   className="h-auto max-h-8 w-auto max-w-full object-contain"
                 />
               </div>
@@ -154,8 +156,10 @@ export function Testimonials() {
                 <Image
                   src={company.logo}
                   alt={company.name}
-                  width={200}
-                  height={100}
+                  width={128}
+                  height={64}
+                  quality={72}
+                  sizes="128px"
                   className="h-auto max-h-10 w-auto max-w-full object-contain "
                 />
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -24,7 +24,6 @@ export default function Hero() {
   const maskRafRef = useRef<number | null>(null);
   const pendingMaskRef = useRef<string>("");
   const appliedMaskRef = useRef<string>("");
-  const [ready] = useState(true);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -247,8 +246,8 @@ export default function Hero() {
               className="mb-6"
               initial={{ opacity: 0, y: 18 }}
               animate={{
-                opacity: ready ? 1 : 0,
-                y: ready ? 0 : 18,
+                opacity: 1,
+                y: 0,
               }}
               transition={{
                 duration: 0.75,
@@ -262,31 +261,20 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.h1
+            <h1
               className="leading-[1.08] text-white "
               style={{
                 fontSize: "clamp(2.5rem, 6vw, 5.2rem)",
                 fontWeight: 400,
-                letterSpacing: "-0.015em",
                 textShadow:
                   "0 2px 48px rgba(10,5,1,0.8), 0 0 12px rgba(10,5,1,0.6)",
-              }}
-              initial={{ opacity: 0, y: 36 }}
-              animate={{
-                opacity: ready ? 1 : 0,
-                y: ready ? 0 : 36,
-              }}
-              transition={{
-                duration: 1.05,
-                delay: 0.45,
-                ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
               World-Class Performance
               <br />
               Is Built on
               <br />
-              <motion.span
+              <span
                 className="italic text-white"
                 // style={{
                 //   background:
@@ -295,21 +283,15 @@ export default function Hero() {
                 //   WebkitTextFillColor: "transparent",
                 //   backgroundClip: "text",
                 // }}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: ready ? 1 : 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 0.95,
-                }}
               >
                 World-Class Brain Functioning.
-              </motion.span>
-            </motion.h1>
+              </span>
+            </h1>
 
             <motion.div
               className="absolute -bottom-20 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
               initial={{ opacity: 0 }}
-              animate={{ opacity: ready ? 1 : 0 }}
+              animate={{ opacity: 1 }}
               transition={{
                 duration: 1,
                 delay: 1.9,

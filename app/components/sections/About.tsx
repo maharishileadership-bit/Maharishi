@@ -55,9 +55,11 @@ export function About() {
             <div className="mt-8 max-w-[34rem] overflow-hidden rounded-[2rem] sm:p-5">
               <Image
                 src="/images/Premise.png"
-                width={600}
-                height={400}
+                width={500}
+                height={305}
                 alt="Neuroscience illustration of brain coherence during Transcendental Meditation"
+                sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 42vw, 100vw"
+                quality={68}
                 className="h-auto w-full rounded-[1.35rem] object-contain"
               />
             </div>

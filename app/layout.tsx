@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
-import { ConsultationDrawerProvider } from "@/app/components/consultation/ConsultationDrawerProvider";
-import { SmoothScrollProvider } from "@/app/components/providers/SmoothScrollProvider";
 import "./globals.css";
 
 const siteUrl =
@@ -94,12 +92,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col text-foreground antialiased">
 
-      <Script
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9G7N260J6H"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -132,9 +130,7 @@ export default function RootLayout({
             };
           `}
         </Script> */}
-        <SmoothScrollProvider>
-          <ConsultationDrawerProvider>{children}</ConsultationDrawerProvider>
-        </SmoothScrollProvider>
+        {children}
       </body>
     </html>
   );

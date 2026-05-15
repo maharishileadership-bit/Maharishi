@@ -3,26 +3,26 @@
 import Image from "next/image";
 
 const companies = [
-  { "name": "Google", "logo": "google.png" },
-  { "name": "IBM", "logo": "ibm.jpg" },
-  { "name": "Bridgewater Associates", "logo": "Bridgewater_Associates.jpg" },
-  { "name": "Hewlett-Packard", "logo": "hpe.png" },
-  { "name": "Ericsson", "logo": "Ericsson.png" },
-  { "name": "General Motors", "logo": "General_Motors.png" },
-  { "name": "Toyota", "logo": "Toyota-logo.png" },
-  { "name": "Citi", "logo": "Citi.png" },
-  { "name": "Citadel", "logo": "citadel.webp" },
-  { "name": "Square", "logo": "square.png" },
-  { "name": "Dropbox", "logo": "Dropbox.png" },
-  { "name": "Instagram", "logo": "instagram.png" },
-  { "name": "Superhuman", "logo": "Superhuman.png" },
-  { "name": "Salesforce", "logo": "SFDO.webp" },
-  { "name": "Piramal Capital", "logo": "Piramal.jpg" },
-  { "name": "Wipro Infotech", "logo": "wipro.png" },
-  { "name": "Tata Tea", "logo": "tatatea.jpg" },
-  { "name": "Taj Hotels", "logo": "taj.jpg" },
-  { "name": "JetSynthesys", "logo": "JetSynthesys.jpg" },
-  { "name": "Eveready", "logo": "EVEREADY.jpg" },
+  { name: "Google", logo: "google.webp" },
+  { name: "IBM", logo: "ibm.webp" },
+  { name: "Bridgewater Associates", logo: "Bridgewater_Associates.webp" },
+  { name: "Hewlett-Packard", logo: "hpe.webp" },
+  { name: "Ericsson", logo: "Ericsson.webp" },
+  { name: "General Motors", logo: "General_Motors.webp" },
+  { name: "Toyota", logo: "Toyota-logo.webp" },
+  { name: "Citi", logo: "Citi.webp" },
+  { name: "Citadel", logo: "citadel.webp" },
+  { name: "Square", logo: "square.webp" },
+  { name: "Dropbox", logo: "Dropbox.webp" },
+  { name: "Instagram", logo: "instagram.webp" },
+  { name: "Superhuman", logo: "Superhuman.webp" },
+  { name: "Salesforce", logo: "SFDO.webp" },
+  { name: "Piramal Capital", logo: "Piramal.webp" },
+  { name: "Wipro Infotech", logo: "wipro.webp" },
+  { name: "Tata Tea", logo: "tatatea.webp" },
+  { name: "Taj Hotels", logo: "taj.webp" },
+  { name: "JetSynthesys", logo: "JetSynthesys.webp" },
+  { name: "Eveready", logo: "EVEREADY.webp" },
 ]
 export function CompaniesMarquee() {
   const marqueeCompanies = [...companies, ...companies];
@@ -41,10 +41,12 @@ export function CompaniesMarquee() {
             <div key={`${c.name}-${i}`} className="flex shrink-0 items-center gap-3">
               <div className="flex h-14 w-28 items-center justify-center rounded-2xl bg-white px-4 shadow-[0_14px_34px_-24px_rgba(4,18,44,0.6)] sm:h-16 sm:w-32 md:h-[4.5rem] md:w-36">
                 <Image
-                  src={`/logos/${c.logo}`}
+                  src={`/logos/optimized/${c.logo}`}
                   alt={c.name}
-                  width={320}
-                  height={160}
+                  width={144}
+                  height={72}
+                  quality={72}
+                  sizes="(min-width: 768px) 144px, (min-width: 640px) 128px, 112px"
                   className="h-auto max-h-12 w-auto max-w-full object-contain sm:max-h-15 md:max-h-18"
                 />
               </div>
