@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
+import {
+  siteDescription,
+  siteName,
+  siteOgImage,
+  siteTitle,
+  siteUrl,
+} from "@/app/lib/site";
 import "./globals.css";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://maharishi-leadership.vercel.app";
-const siteTitle =
-  "Maharishi Center for Leadership | Transcendental Meditation for Executive Performance";
-const siteDescription =
-  "A four-month executive development programme that uses Transcendental Meditation to strengthen clarity, creativity, resilience, health, and sustained leadership performance.";
 
 const bodyFont = Geist({
   variable: "--font-body",
@@ -31,13 +31,15 @@ const monoFont = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Maharishi Center for Leadership",
-    template: "%s | Maharishi Center for Leadership",
+    default: siteTitle,
+    template: `%s | ${siteName}`,
   },
   description: siteDescription,
-  applicationName: "Maharishi Center for Leadership",
+  applicationName: siteName,
+  category: "Executive Education",
+  classification: "Leadership development programme",
   keywords: [
-    "Maharishi Center for Leadership",
+    siteName,
     "Transcendental Meditation",
     "executive leadership programme",
     "stress reduction",
@@ -45,41 +47,77 @@ export const metadata: Metadata = {
     "brain coherence",
     "leadership performance",
   ],
-  authors: [{ name: "Maharishi Center for Leadership" }],
-  creator: "Maharishi Center for Leadership",
-  publisher: "Maharishi Center for Leadership",
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     url: "/",
     title: siteTitle,
     description: siteDescription,
-    siteName: "Maharishi Center for Leadership",
+    siteName,
     images: [
       {
-        url: "/images/man-leader.webp",
+        url: siteOgImage,
         width: 1200,
         height: 630,
-        alt: "Maharishi Center for Leadership",
+        alt: "Executive leader practicing calm, focused leadership through Transcendental Meditation",
       },
-    ],    
+    ],
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/man-leader.webp"],
+    images: [siteOgImage],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   verification: {
     google: "AuSHddI7bhNIDIvKB_X3iHHBe2bEMGY8nY4IvUn7O6o",
   },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: siteName,
+  url: siteUrl,
+  logo: new URL("/favicon-512x512.png", siteUrl).toString(),
+  description: siteDescription,
+  sameAs: ["https://www.tm.org"],
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  url: siteUrl,
+  description: siteDescription,
 };
 
 export default function RootLayout({
@@ -94,6 +132,12 @@ export default function RootLayout({
       className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} h-full bg-background`}
     >
       <body className="min-h-full flex flex-col text-foreground antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationJsonLd, webSiteJsonLd]),
+          }}
+        />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9G7N260J6H"

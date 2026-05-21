@@ -9,6 +9,7 @@ import {
   useSpring,
   useMotionValueEvent,
 } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const TRUST_ITEMS = [
@@ -156,27 +157,36 @@ export default function Hero() {
       {/* HERO BACKGROUND - only inside hero, not fixed globally */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Sharp base image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
-          style={{
-            backgroundImage: "url(/images/man-leader.webp)",
-            backgroundPosition: "center 78%",
-          }}
+        <Image
+          src="/images/man-leader.webp"
+          alt="Executive leader standing calmly as a symbol of focused, resilient leadership"
+          fill
+          preload
+          fetchPriority="high"
+          sizes="100vw"
+          className="object-cover object-[center_78%]"
         />
 
         {/* Blurred copy */}
         <div
           ref={blurLayerRef}
-          className="absolute  inset-0 bg-cover bg-center bg-no-repeat"
+          aria-hidden
+          className="absolute inset-0"
           style={{
-            backgroundImage: "url(/images/man-leader.webp)",
-            backgroundPosition: "center 78%",
             filter: "blur(26px)",
             transform: "translateZ(0) scale(1.06)",
             willChange: "mask-image, transform",
             backfaceVisibility: "hidden",
           }}
-        />
+        >
+          <Image
+            src="/images/man-leader.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-[center_78%]"
+          />
+        </div>
 
         {/* Warm vignette */}
         <motion.div

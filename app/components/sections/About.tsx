@@ -118,7 +118,7 @@ export function About() {
                   <div className="relative h-[100px] width-[100px] my-auto overflow-hidden  bg-muted">
                     <Image
                       src={point.image}
-                      alt={point.title}
+                      alt={`${point.title} illustration for Transcendental Meditation leadership benefits`}
                       fill
                       sizes="150px"
                       className="object-cover  width-[100px]"

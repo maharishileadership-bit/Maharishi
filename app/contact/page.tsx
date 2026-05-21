@@ -2,12 +2,38 @@ import type { Metadata } from "next";
 import { ContactInquiryForm } from "@/app/components/pages/ContactInquiryForm";
 import { Footer } from "@/app/components/sections/Footer";
 import { Navbar } from "@/app/components/sections/Navbar";
+import { siteDescription, siteName, siteOgImage } from "@/app/lib/site";
 import { resolveContactInquiryType } from "@/data/contact";
 
 export const metadata: Metadata = {
-  title: "Contact | Maharishi Center for Leadership",
+  title: "Contact",
   description:
     "Book an intro conversation or send an enquiry for individual and team programmes.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    type: "website",
+    url: "/contact",
+    title: `Contact | ${siteName}`,
+    description:
+      "Book an intro conversation with Maharishi Center for Leadership for individual, executive, and team programmes.",
+    siteName,
+    images: [
+      {
+        url: siteOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Maharishi Center for Leadership executive programme enquiry",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact | ${siteName}`,
+    description: siteDescription,
+    images: [siteOgImage],
+  },
 };
 
 export default async function ContactPage({

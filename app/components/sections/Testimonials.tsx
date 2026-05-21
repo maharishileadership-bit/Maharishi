@@ -155,7 +155,7 @@ export function Testimonials() {
               >
                 <Image
                   src={company.logo}
-                  alt={company.name}
+                  alt={`${company.name} logo`}
                   width={128}
                   height={64}
                   quality={72}

@@ -127,7 +127,7 @@ export function Programme() {
                           }}
                         ><Image
                                          src="/images/ken-gunsberger.png"
-                                         alt=""
+                                         alt="Ken Gunsberger, Transcendental Meditation teacher and programme guide"
                                          fill
                                          sizes="(min-width: 1024px) 26rem, 100vw"
                                          className="object-cover"

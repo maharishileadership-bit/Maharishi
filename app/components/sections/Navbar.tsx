@@ -82,7 +82,7 @@ export function Navbar() {
           <button
             type="button"
             className={`z-50 rounded-full p-2 transition-colors lg:hidden ${
-              isScrolled
+              isScrolled || !isHome
                 ? "text-primary hover:bg-primary/5"
                 : "text-primary-foreground hover:bg-white/10"
             }`}

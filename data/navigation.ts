@@ -11,6 +11,7 @@ export const primaryNavLinks: SiteLink[] = [
   { label: "Programme", href: "/#programme" },
   { label: "Curriculum", href: "/#curriculum" },
   { label: "Voices", href: "/#testimonials" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export const footerColumns = [
@@ -21,6 +22,7 @@ export const footerColumns = [
       { label: "The Science", href: "/#science" },
       { label: "The Benefits", href: "/#benefits" },
       { label: "Voices", href: "/#testimonials" },
+      { label: "Blog", href: "/blog" },
     ],
   },
   {

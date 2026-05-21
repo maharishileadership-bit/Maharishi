@@ -42,7 +42,7 @@ export function CompaniesMarquee() {
               <div className="flex h-14 w-28 items-center justify-center rounded-2xl bg-white px-4 shadow-[0_14px_34px_-24px_rgba(4,18,44,0.6)] sm:h-16 sm:w-32 md:h-[4.5rem] md:w-36">
                 <Image
                   src={`/logos/optimized/${c.logo}`}
-                  alt={c.name}
+                  alt={`${c.name} logo`}
                   width={144}
                   height={72}
                   quality={72}

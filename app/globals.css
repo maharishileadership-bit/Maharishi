@@ -122,7 +122,7 @@
   h5,
   h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     text-wrap: balance;
   }
 
@@ -233,6 +233,112 @@
   .book-pill:focus-visible .book-pill-dot {
     transform: scale(1.45);
     opacity: 1;
+  }
+
+  .blog-description p + p {
+    margin-top: 1rem;
+  }
+
+  .blog-grid-page {
+    position: relative;
+    isolation: isolate;
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.06) 1px, transparent 1px),
+      radial-gradient(circle at top left, hsl(var(--sky) / 0.42), transparent 25rem),
+      radial-gradient(circle at top right, hsl(var(--peach) / 0.18), transparent 22rem),
+      linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--cream-deep)) 50%, hsl(var(--cream)) 100%);
+    background-size: 62px 62px, 62px 62px, auto, auto, auto;
+  }
+
+  .blog-grid-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, hsl(var(--cream) / 0.95), transparent 18%, transparent 82%, hsl(var(--cream) / 0.95)),
+      radial-gradient(circle at 50% 0%, hsl(var(--cream-card) / 0.88), transparent 30rem);
+  }
+
+  .blog-grid-page ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .blog-grid-page ::-webkit-scrollbar-track {
+    background: hsl(var(--muted) / 0.7);
+  }
+
+  .blog-grid-page ::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background: linear-gradient(180deg, hsl(var(--peach)), hsl(var(--peach-deep)));
+  }
+
+  .blog-description a,
+  .blog-rich-content a {
+    color: hsl(var(--peach-deep));
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+
+  .blog-rich-content {
+    color: hsl(var(--primary) / 0.72);
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.82;
+  }
+
+  .blog-rich-content > * + * {
+    margin-top: 1.45rem;
+  }
+
+  .blog-rich-content h2,
+  .blog-rich-content h3 {
+    color: hsl(var(--primary));
+    font-family: var(--font-body);
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .blog-rich-content h2 {
+    margin-top: 2.9rem;
+    font-size: clamp(2.4rem, 4vw, 3.7rem);
+  }
+
+  .blog-rich-content h3 {
+    margin-top: 2.35rem;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+  }
+
+  .blog-rich-content blockquote {
+    border-left: 4px solid hsl(var(--peach-deep));
+    border-radius: 0 1rem 1rem 0;
+    background: hsl(var(--secondary) / 0.9);
+    color: hsl(var(--primary));
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.35;
+    margin-block: 2rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .blog-rich-content ul,
+  .blog-rich-content ol {
+    padding-left: 1.25rem;
+  }
+
+  .blog-rich-content li + li {
+    margin-top: 0.65rem;
+  }
+
+  .blog-rich-content ul {
+    list-style: disc;
+  }
+
+  .blog-rich-content ol {
+    list-style: decimal;
   }
 }
 

@@ -174,7 +174,7 @@ export function Science() {
             <div className="relative aspect-[4/3] overflow-hidden ">
               <Image
                 src="/images/coherence.jpg"
-                alt="EEG coherence visual"
+                alt="EEG brain coherence chart showing integrated brain functioning during Transcendental Meditation"
                 fill
                 sizes="(min-width: 1024px) 42rem, 100vw"
                 className="object-cover"

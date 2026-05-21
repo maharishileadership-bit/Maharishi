@@ -139,7 +139,13 @@ export function Benefits() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-12">
         <div className="h-96 overflow-hidden w-full lg:w-[40%]">
-            <Image src="/images/rohit-gulati.png" width={600} height={400} alt="Executive in a boardroom with team members in the background" className="w-auto h-full mx-auto"/>
+            <Image
+              src="/images/rohit-gulati.png"
+              width={600}
+              height={400}
+              alt="Executive leader speaking with a team in a boardroom"
+              className="w-auto h-full mx-auto"
+            />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
