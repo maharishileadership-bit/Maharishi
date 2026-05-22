@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   creator: siteName,
   publisher: siteName,
   alternates: {
-    canonical: "/",
+    canonical: `${siteUrl}/`,
   },
   icons: {
     icon: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
-    url: "/",
+    url: `${siteUrl}/`,
     title: siteTitle,
     description: siteDescription,
     siteName,
