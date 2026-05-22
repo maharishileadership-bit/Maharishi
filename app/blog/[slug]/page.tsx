@@ -111,7 +111,7 @@ function TableOfContents({ headings }: { headings: BlogHeading[] }) {
   }
 
   return (
-    <div className="rounded-[1.1rem] border border-border/85 bg-card/80 p-6 shadow-[0_28px_90px_-68px_rgba(7,29,64,0.6)] backdrop-blur">
+    <div className="max-h-[calc(100dvh-8rem)] overflow-y-auto rounded-[1.1rem] border border-border/85 bg-card/80 p-6 shadow-[0_28px_90px_-68px_rgba(7,29,64,0.6)] backdrop-blur">
       <p className="mb-5 text-[11px] font-extrabold uppercase tracking-[0.28em] text-primary/42">
         On this page
       </p>
@@ -393,10 +393,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-28 space-y-6">
+              <div className="sticky top-20 max-h-[calc(100dvh-8rem)] space-y-6">
                 <TableOfContents headings={preparedArticle.headings} />
 
-                <div className="rounded-[1.1rem] border border-border/85 bg-card/80 p-6 shadow-[0_28px_90px_-68px_rgba(7,29,64,0.6)] backdrop-blur">
+                {/* <div className="rounded-[1.1rem] border border-border/85 bg-card/80 p-6 shadow-[0_28px_90px_-68px_rgba(7,29,64,0.6)] backdrop-blur">
                   <p className="mb-5 text-[11px] font-extrabold uppercase tracking-[0.28em] text-primary/42">
                     Tags
                   </p>
@@ -410,7 +410,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </aside>
           </div>

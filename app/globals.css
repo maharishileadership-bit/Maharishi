@@ -242,13 +242,10 @@
   .blog-grid-page {
     position: relative;
     isolation: isolate;
-    background-image:
-      linear-gradient(hsl(var(--primary) / 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--primary) / 0.06) 1px, transparent 1px),
+    background:
       radial-gradient(circle at top left, hsl(var(--sky) / 0.42), transparent 25rem),
       radial-gradient(circle at top right, hsl(var(--peach) / 0.18), transparent 22rem),
       linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--cream-deep)) 50%, hsl(var(--cream)) 100%);
-    background-size: 62px 62px, 62px 62px, auto, auto, auto;
   }
 
   .blog-grid-page::before {
@@ -300,6 +297,7 @@
     font-family: var(--font-body);
     font-weight: 900;
     line-height: 1.1;
+    scroll-margin-top: 8rem;
   }
 
   .blog-rich-content h2 {
