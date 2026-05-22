@@ -310,7 +310,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 dangerouslySetInnerHTML={{ __html: post.titleHtml.html }}
               />
             ) : (
-              <h1 className="mt-6 max-w-[76rem] text-[clamp(2.8rem,5.8vw,5.35rem)] font-black leading-[0.98] tracking-normal text-primary">
+              <h1 className="mt-6 max-w-[76rem] text-[clamp(2.8rem,4.5vw,5.35rem)] font-black leading-[0.98] tracking-normal text-primary">
                 {post.title}
               </h1>
             )}

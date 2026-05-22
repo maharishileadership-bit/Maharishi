@@ -35,14 +35,14 @@ export const blogPosts: BlogPost[] = [
     id: "effortless-technique-measurable-transformation",
     slug: "an-effortless-technique-measurable-transformation",
     title: "An Effortless Technique. A Measurable Transformation.",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    An Effortless Technique. A 
-    <span style="color:#eac153; font-style:italic;">
-      Measurable Transformation.
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   An Effortless Technique. A 
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Measurable Transformation.
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "Transcendental Meditation for Leaders",
     metaDescription:
       "Learn what Transcendental Meditation is, how the TM technique is practised, and why it supports clarity, resilience, and leadership performance.",
@@ -278,12 +278,12 @@ export const blogPosts: BlogPost[] = [
     id: "heart-disease-india-stress-reduction-transcendental-meditation",
     slug: "heart-disease-india-stress-reduction-transcendental-meditation",
     title: "Heart Disease in India: Why Stress Reduction Belongs in Prevention",
-  titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    Heart Disease in India:
-    <span style="color:#eac153; font-style:italic;">Why Stress Reduction Belongs in Prevention</span>
-  </h1>`,
-    },
+  // titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   Heart Disease in India:
+  //   <span style="color:#eac153; font-style:italic;">Why Stress Reduction Belongs in Prevention</span>
+  // </h1>`,
+  //   },
     metaTitle: "Heart Disease in India and Stress Reduction",
     metaDescription:
       "Heart disease is a leading cause of death in India. Learn why stress reduction, hypertension control, and Transcendental Meditation belong in cardiovascular prevention.",
@@ -816,12 +816,12 @@ export const blogPosts: BlogPost[] = [
     slug: "leadership-brain-performance-brain-coherence",
     title: "The Leadership Brain: Why Performance Begins with Brain Coherence",
     metaTitle: "Brain Coherence and Executive Performance",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    The Leadership Brain:
-    <span style="color:#eac153; font-style:italic;">Why Performance Begins with Brain Coherence</span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   The Leadership Brain:
+  //   <span style="color:#eac153; font-style:italic;">Why Performance Begins with Brain Coherence</span>
+  // </h1>`,
+  //   },
     metaDescription:
       "Explore how brain coherence supports clarity, creativity, emotional stability, and better decision-making for executives and leaders.",
     primaryKeyword: "brain coherence",
@@ -1259,12 +1259,12 @@ export const blogPosts: BlogPost[] = [
     slug: "executive-burnout-deep-rest-leadership-resilience",
     title: "Burnout Is Physiological: Why Leaders Need Deep Rest, Not More Willpower",
     metaTitle: "Executive Burnout and Deep Rest for Leaders",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    Burnout Is Physiological:
-    <span style="color:#eac153; font-style:italic;">Why Leaders Need Deep Rest, Not More Willpower</span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   Burnout Is Physiological:
+  //   <span style="color:#eac153; font-style:italic;">Why Leaders Need Deep Rest, Not More Willpower</span>
+  // </h1>`,
+  //   },
     metaDescription:
       "Executive burnout is not only a mindset problem. Learn why leaders need nervous system recovery, deep rest, and stress reduction to build resilience.",
     primaryKeyword: "executive burnout",
@@ -1700,12 +1700,12 @@ export const blogPosts: BlogPost[] = [
     id: "restful-alertness-fourth-state-leadership",
     slug: "restful-alertness-fourth-state-leadership",
     title: "Restful Alertness: The Fourth State Leaders Need to Understand",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    Restful Alertness:
-    <span style="color:#eac153; font-style:italic;">The Fourth State Leaders Need to Understand</span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   Restful Alertness:
+  //   <span style="color:#eac153; font-style:italic;">The Fourth State Leaders Need to Understand</span>
+  // </h1>`,
+  //   },
     metaTitle: "Restful Alertness and Leadership Performance",
     metaDescription:
       "Learn what restful alertness means, why it is called a fourth state of consciousness, and how Transcendental Meditation supports clarity and resilience for leaders.",
@@ -2176,14 +2176,14 @@ export const blogPosts: BlogPost[] = [
     id: "why-high-performers-choose-transcendental-meditation",
     slug: "why-high-performers-choose-transcendental-meditation",
     title: "Why High Performers Choose Transcendental Meditation",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    Why High Performers Choose
-    <span style="color:#eac153; font-style:italic;">
-      Transcendental Meditation
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   Why High Performers Choose
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Transcendental Meditation
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "Why High Performers Choose TM Meditation",
     metaDescription:
       "Discover why CEOs, founders, athletes, artists, and senior professionals use Transcendental Meditation for clarity, recovery, and sustainable high performance.",
@@ -2759,14 +2759,14 @@ export const blogPosts: BlogPost[] = [
     slug: "stress-reaction-to-leadership-presence",
     
     title: "From Stress Reaction to Leadership Presence",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    From Stress Reaction to
-    <span style="color:#eac153; font-style:italic;">
-      Leadership Presence
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   From Stress Reaction to
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Leadership Presence
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "Leadership Presence Through Stress Reduction",
     metaDescription:
       "Learn how stress reduction, emotional intelligence, and Transcendental Meditation help leaders communicate calmly, decide better, and lead with presence.",
@@ -3334,14 +3334,14 @@ export const blogPosts: BlogPost[] = [
     id: "20-minute-practice-for-sharper-decisions",
     slug: "20-minute-practice-for-sharper-decisions",
     title: "A 20-Minute Practice for Sharper Decisions",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    A 20-Minute Practice for
-    <span style="color:#eac153; font-style:italic;">
-      Sharper Decisions
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   A 20-Minute Practice for
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Sharper Decisions
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "20-Minute Meditation for Sharper Decisions",
     metaDescription:
       "Learn how a 20-minute Transcendental Meditation practice can help leaders reduce decision fatigue, improve clarity, and support cognitive performance.",
@@ -3870,14 +3870,14 @@ export const blogPosts: BlogPost[] = [
     id: "tm-vs-mindfulness-breathwork-concentration",
     slug: "tm-vs-mindfulness-breathwork-concentration",
     title: "Why TM Is Not Concentration, Mindfulness, or Breathwork",
-    titleHtml: {
-      html: ` <h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    Why TM Is Not
-    <span style="color:#eac153; font-style:italic;">
-      Concentration, Mindfulness, or Breathwork
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: ` <h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   Why TM Is Not
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Concentration, Mindfulness, or Breathwork
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "TM vs Mindfulness, Breathwork, and Concentration",
     metaDescription:
       "Learn how Transcendental Meditation differs from concentration, mindfulness, breathwork, and guided meditation, and why TM is effortless.",
@@ -4514,14 +4514,14 @@ export const blogPosts: BlogPost[] = [
     id: "science-of-sustainable-peak-performance",
     slug: "science-of-sustainable-peak-performance",
     title: "The Science of Sustainable Peak Performance",
-    titleHtml: {
-      html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
-    The Science of
-    <span style="color:#eac153; font-style:italic;">
-      Sustainable Peak Performance
-    </span>
-  </h1>`,
-    },
+  //   titleHtml: {
+  //     html: `<h1 style="font-size:46px; font-weight:400; color:#0f2c4d; margin-bottom:26px; line-height:1.2;">
+  //   The Science of
+  //   <span style="color:#eac153; font-style:italic;">
+  //     Sustainable Peak Performance
+  //   </span>
+  // </h1>`,
+  //   },
     metaTitle: "Sustainable Peak Performance for Leaders",
     metaDescription:
       "Explore how the Maharishi Center for Leadership's executive development programme connects Transcendental Meditation, resilience, creativity, health, and long-term performance.",
