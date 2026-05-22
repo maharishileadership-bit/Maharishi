@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getBlogThumbnail, getVisibleBlogPosts } from "@/app/lib/blogs";
 import { siteUrl } from "@/app/lib/site";
 
-const lastModified = new Date("2026-05-20");
+const lastModified = new Date("2026-05-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = getVisibleBlogPosts();
@@ -30,6 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.7,
+      images: blogPosts.map((post) =>
+        new URL(getBlogThumbnail(post), siteUrl).toString(),
+      ),
     },
     ...blogPosts.map((post) => ({
       url: new URL(`/blog/${post.slug}`, siteUrl).toString(),

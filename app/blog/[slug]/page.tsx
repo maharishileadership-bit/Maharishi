@@ -45,6 +45,14 @@ export async function generateMetadata({
   return {
     title: post.metaTitle ?? post.title,
     description,
+    keywords: [
+      post.primaryKeyword,
+      ...post.secondaryKeywords,
+      ...post.tags,
+      siteName,
+    ],
+    authors: [{ name: post.author }],
+    category: post.category,
     alternates: {
       canonical: url,
     },
@@ -182,41 +190,67 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const preparedArticle = prepareBlogHtml(articleHtml);
   const thumbnail = getBlogThumbnail(post);
   const canonicalUrl = getBlogPostUrl(post.slug);
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.metaDescription ?? stripHtml(post.description.html),
-    image: new URL(thumbnail, siteUrl).toString(),
-    url: canonicalUrl,
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt ?? post.publishedAt,
-    articleSection: post.category,
-    keywords: [
-      ...post.tags,
-      post.primaryKeyword,
-      ...(post.secondaryKeywords ?? []),
-    ]
-      .filter(Boolean)
-      .join(", "),
-    author: {
-      "@type": "Organization",
-      name: post.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteName,
-      url: siteUrl,
-      logo: {
-        "@type": "ImageObject",
-        url: new URL("/favicon-512x512.png", siteUrl).toString(),
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.metaDescription ?? stripHtml(post.description.html),
+      image: new URL(thumbnail, siteUrl).toString(),
+      url: canonicalUrl,
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt ?? post.publishedAt,
+      articleSection: post.category,
+      keywords: [
+        ...post.tags,
+        post.primaryKeyword,
+        ...(post.secondaryKeywords ?? []),
+      ]
+        .filter(Boolean)
+        .join(", "),
+      author: {
+        "@type": "Organization",
+        name: post.author,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: siteName,
+        url: siteUrl,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/favicon-512x512.png", siteUrl).toString(),
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
       },
     },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": canonicalUrl,
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: siteUrl,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: new URL("/blog", siteUrl).toString(),
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: post.title,
+          item: canonicalUrl,
+        },
+      ],
     },
-  };
+  ];
 
   return (
     <div className="blog-grid-page flex min-h-[100dvh] w-full flex-col text-primary">

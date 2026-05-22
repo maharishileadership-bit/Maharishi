@@ -10,12 +10,21 @@ import {
   getBlogThumbnail,
   type BlogPostSummary,
 } from "@/app/lib/blogs";
-import { siteName, siteOgImage } from "@/app/lib/site";
+import { siteName, siteOgImage, siteUrl } from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
     "Insights from Maharishi Center for Leadership on brain-based leadership, resilience, creativity, and executive performance.",
+  keywords: [
+    "Maharishi Center for Leadership blog",
+    "Transcendental Meditation",
+    "executive leadership",
+    "brain coherence",
+    "leadership resilience",
+    "sustainable peak performance",
+    "stress reduction for leaders",
+  ],
   alternates: {
     canonical: "/blog",
   },
@@ -150,11 +159,41 @@ export default async function BlogIndexPage({
   const filteredPosts = activeCategory
     ? posts.filter((post) => post.category === activeCategory)
     : posts;
+  const blogJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: `${siteName} Blog`,
+    url: new URL("/blog", siteUrl).toString(),
+    description:
+      "Insights on Transcendental Meditation, brain-based leadership, resilience, and sustainable peak performance.",
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      url: siteUrl,
+    },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.metaDescription,
+      url: new URL(`/blog/${post.slug}`, siteUrl).toString(),
+      image: new URL(getBlogThumbnail(post), siteUrl).toString(),
+      datePublished: post.publishedAt,
+      author: {
+        "@type": "Organization",
+        name: post.author,
+      },
+    })),
+  };
 
   return (
     <div className="blog-grid-page flex min-h-[100dvh] w-full flex-col text-primary">
       <Navbar />
       <main className="relative mx-auto w-full max-w-[1450px] flex-1 px-5 pb-20 pt-28 sm:px-8 md:pt-32">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+        />
+
         <div className="mb-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
           <Link
             href="/blog"

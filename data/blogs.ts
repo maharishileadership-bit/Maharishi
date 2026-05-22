@@ -29,7 +29,6 @@ export type BlogPost = {
 
 const defaultAuthor = "Maharishi Center for Leadership";
 const defaultAuthorRole = "Programme Faculty";
-const defaultThumbnailAlt = "Maharishi Center for Leadership blog article";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -64,8 +63,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-1.png",
+    thumbnailAlt:
+      "Executive leader practicing Transcendental Meditation for clarity and resilience",
     tags: ["Transcendental Meditation", "TM technique", "Leadership"],
     description: {
       html: "<p>Learn what Transcendental Meditation is, how the TM technique is practised, and why it supports clarity, resilience, and leadership performance.</p>",
@@ -303,8 +303,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-2.png",
+    thumbnailAlt:
+      "Heart health and stress reduction concept for leaders in India",
     tags: ["Heart Disease", "Stress Reduction", "Prevention"],
     description: {
       html: "<p>Heart disease is a leading cause of death in India. Learn why stress reduction, hypertension control, and Transcendental Meditation belong in cardiovascular prevention.</p>",
@@ -839,8 +840,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-3.png",
+    thumbnailAlt:
+      "Brain coherence and executive performance leadership concept",
     tags: ["Brain Coherence", "Executive Performance", "Neuroscience"],
     description: {
       html: "<p>Explore how brain coherence supports clarity, creativity, emotional stability, and better decision-making for executives and leaders.</p>",
@@ -1281,8 +1283,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-4.png",
+    thumbnailAlt:
+      "Executive burnout recovery through deep rest and resilience",
     tags: ["Executive Burnout", "Deep Rest", "Resilience"],
     description: {
       html: "<p>Executive burnout is not only a mindset problem. Learn why leaders need nervous system recovery, deep rest, and stress reduction to build resilience.</p>",
@@ -1722,8 +1725,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-5.png",
+    thumbnailAlt:
+      "Restful alertness and fourth state of consciousness for leaders",
     tags: ["Restful Alertness", "Consciousness", "TM Science"],
     description: {
       html: "<p>Learn what restful alertness means, why it is called a fourth state of consciousness, and how Transcendental Meditation supports clarity and resilience for leaders.</p>",
@@ -2200,8 +2204,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-6.jpg",
+    thumbnailAlt:
+      "High performers using Transcendental Meditation for sustainable performance",
     tags: ["High Performance", "Executive Wellness", "TM"],
     description: {
       html: "<p>Discover why CEOs, founders, athletes, artists, and senior professionals use Transcendental Meditation for clarity, recovery, and sustainable high performance.</p>",
@@ -2782,8 +2787,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-7.jpg",
+    thumbnailAlt:
+      "Leader moving from stress reaction to calm leadership presence",
     tags: ["Leadership Presence", "Emotional Intelligence", "Stress"],
     description: {
       html: "<p>Learn how stress reduction, emotional intelligence, and Transcendental Meditation help leaders communicate calmly, decide better, and lead with presence.</p>",
@@ -3355,8 +3361,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-8.jpg",
+    thumbnailAlt:
+      "Twenty minute meditation practice for sharper executive decisions",
     tags: ["Decision-Making", "Executive Clarity", "Focus"],
     description: {
       html: "<p>Learn how a 20-minute Transcendental Meditation practice can help leaders reduce decision fatigue, improve clarity, and support cognitive performance.</p>",
@@ -3890,8 +3897,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-9.jpg",
+    thumbnailAlt:
+      "Transcendental Meditation compared with mindfulness breathwork and concentration",
     tags: ["TM vs Mindfulness", "Breathwork", "Effortless Meditation"],
     description: {
       html: "<p>Learn how Transcendental Meditation differs from concentration, mindfulness, breathwork, and guided meditation, and why TM is effortless.</p>",
@@ -4534,8 +4542,9 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "",
-    thumbnailAlt: defaultThumbnailAlt,
+    thumbnail: "/blogs-images/blog-10.jpg",
+    thumbnailAlt:
+      "Sustainable peak performance science for executive leadership",
     tags: ["Peak Performance", "Executive Development", "TM Research"],
     description: {
       html: "<p>Explore how the Maharishi Center for Leadership's executive development programme connects Transcendental Meditation, resilience, creativity, health, and long-term performance.</p>",
