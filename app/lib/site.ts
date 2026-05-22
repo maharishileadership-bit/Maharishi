@@ -1,5 +1,6 @@
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://maharishi-leadership.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://www.maharishileadershipcenter.com";
 
 export const siteName = "Maharishi Center for Leadership";
 
