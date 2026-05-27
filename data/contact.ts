@@ -90,7 +90,8 @@ export function resolveContactInquiryType(
 }
 
 export function getContactHref(type: ContactInquiryTypeKey = "general") {
-  return type === "general" ? "/contact" : `/contact?type=${type}`;
+  void type;
+  return "/#contact";
 }
 
 export function getContactInquiryType(type: ContactInquiryTypeKey) {

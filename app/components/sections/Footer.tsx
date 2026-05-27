@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { contactEmail, contactName } from "@/data/contact";
 import { footerColumns } from "@/data/navigation";
 
 export function Footer() {
@@ -36,31 +35,19 @@ export function Footer() {
             <p className="text-sm text-primary-foreground/45 leading-[1.8] max-w-sm">
                A four-month executive development programme backed by 480+ peer-reviewed studies over five decades.
             </p>
-            <div className="mt-8">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-primary-foreground/35 mb-2">
-                Direct Contact
-              </p>
-              <p className="font-serif text-2xl text-primary-foreground font-light">
-                {contactName}
-              </p>
+            <p className="mt-8 max-w-sm text-sm leading-[1.8] text-primary-foreground/52">
+              To know more about Transcendental Meditation and the global
+              parent organization, visit{" "}
               <a
-                href={`https://mail.google.com/mail/?view=cm&to=${contactEmail}`}
+                href="https://www.tm.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden text-[hsl(var(--peach))] text-sm hover:underline md:inline"
+                className="font-medium text-[hsl(var(--peach))] underline-offset-4 hover:underline"
               >
-                {contactEmail}
+                tm.org
               </a>
-              <a
-                href={`mailto:${contactEmail}`}
-                className="text-[hsl(var(--peach))] text-sm hover:underline md:hidden"
-              >
-                {contactEmail}
-              </a>
-              {/* <p className="mt-3 text-[11px] uppercase tracking-[0.25em] text-[hsl(var(--peach))]/80 font-medium">
-                In Partnership with CII
-              </p> */}
-            </div>
+              .
+            </p>
           </div>
 
           {footerColumns.map((column) => (
@@ -101,7 +88,7 @@ export function Footer() {
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
           <p className="text-[11px] text-primary-foreground/30 uppercase tracking-widest">
             &copy; {new Date().getFullYear()} Maharishi Center for Leadership.
-            All rights reserved. <span className="text-gray-400"> Developed by <Link href="https://www.arevei.com/" className="text-green-500"> Arevei</Link> </span>
+            All rights reserved.
           </p>
           <p className="text-[11px] text-primary-foreground/30 uppercase tracking-widest">
             Performance is not only what leaders do. It is how their brain

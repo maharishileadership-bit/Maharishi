@@ -24,8 +24,8 @@ export default function Home() {
         <Benefits />
         <Programme />
         <ProfoundHeritage />
-        <Testimonials />
         <Curriculum />
+        <Testimonials />
         <CTA />
       </main>
       <Footer />

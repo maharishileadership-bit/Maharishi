@@ -20,12 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ],
     },
     {
-      url: new URL("/contact", siteUrl).toString(),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: new URL("/blog", siteUrl).toString(),
       lastModified,
       changeFrequency: "weekly",

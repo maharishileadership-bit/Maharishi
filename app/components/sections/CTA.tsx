@@ -1,13 +1,13 @@
 "use client";
 
+import { ContactInquiryForm } from "@/app/components/pages/ContactInquiryForm";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export function CTA() {
   return (
     <section
       id="contact"
-      className="bg-[hsl(var(--primary)/0.92)] text-primary-foreground py-26 md:py-36 text-center relative overflow-hidden"
+      className="bg-[hsl(var(--primary)/0.92)] text-primary-foreground py-20 md:py-28 relative overflow-hidden"
     >
       <div
         aria-hidden
@@ -27,61 +27,44 @@ export function CTA() {
         }}
       />
       <div className="container relative mx-auto px-6 md:px-12">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="font-serif text-4xl md:text-6xl lg:text-[4.75rem] leading-[1.08] font-light mb-8"
-        >
-          Start with{" "}
-          <em className="italic text-[hsl(var(--peach))]">a Conversation.</em>
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.15 }}
-          className="text-lg text-primary-foreground/60 max-w-2xl mx-auto leading-[1.85] font-light mb-14"
-        >
-          The simplest way to understand how the programme works for you, your
-          team, or your organisation is to book a conversation with an expert.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          <Link
-            href="/contact"
-            className="book-pill ml-2 inline-flex tracking-[0.22em] items-center gap-4 rounded-full border  px-10 py-4 text-sm font-semibold uppercase bg-white text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
-            data-testid="nav-cta"
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:items-start">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
           >
-            <span className="relative z-10">Book a Conversation</span>
-            <span className="book-pill-dot relative z-10" />
-          </Link>
-          {/* <Link
-            href={getContactHref("corporate-team")}
-            className="px-10 py-4 rounded-full border border-primary-foreground/30 text-primary-foreground/80 text-sm uppercase tracking-[0.2em] font-medium hover:border-[hsl(var(--peach))] hover:text-[hsl(var(--peach))] transition-colors w-full sm:w-auto text-center"
-          >
-            Bring this to my organisation
-          </Link> */}
-        </motion.div>
+            <p className="mb-5 flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[hsl(var(--peach))]">
+              <span className="h-px w-7 bg-[hsl(var(--peach))]" />
+              Let&apos;s Talk
+            </p>
+            <h2 className="font-serif text-4xl font-light leading-[1.06] md:text-6xl">
+              Book a{" "}
+              <em className="italic text-[hsl(var(--peach))]">
+                Conversation.
+              </em>
+            </h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.5 }}
-          className="mt-10 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/45"
-        >
-          &nbsp;&nbsp;&middot;&nbsp;&nbsp;Trusted by
-          leaders at Google, IBM, Bridgewater, Tata
-        </motion.p>
+            <p className="mt-6 max-w-xl text-base font-light leading-[1.85] text-primary-foreground/64 sm:text-lg">
+              Tell us a little about your context, and our team will get back
+              to you to schedule a discussion.
+            </p>
+
+            <p className="mt-10 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/45">
+              Trusted by leaders at Google, IBM, Bridgewater, Tata
+            </p>
+          </motion.div>
+
+          <motion.article
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, delay: 0.18 }}
+            className="w-full"
+          >
+            <ContactInquiryForm initialType="general" />
+          </motion.article>
+        </div>
       </div>
     </section>
   );

@@ -2,6 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { LiteVideoEmbed } from "./LiteVideoEmbed";
+import { LiteYouTubeEmbed } from "./LiteYouTubeEmbed";
+
+const DR_TEJAS_VIDEO_SRC =
+  "https://res.cloudinary.com/dycpdti0a/video/upload/e_volume:-50/v1778245977/WhatsApp_Video_2026-05-08_at_2.36.52_PM_qrnf3h.mp4";
+const DR_TEJAS_VIDEO_POSTER =
+  "https://res.cloudinary.com/dycpdti0a/video/upload/so_0,w_1280,q_auto,f_jpg/v1778245977/WhatsApp_Video_2026-05-08_at_2.36.52_PM_qrnf3h.jpg";
 
 const quotes = [
   {
@@ -10,7 +17,8 @@ const quotes = [
     role: "Founder & Co-CIO, Bridgewater Associates",
     logo: "/logos/optimized/Bridgewater_Associates.webp",
     logoAlt: "Bridgewater Associates logo",
-    avatar: "/images/Benefits-ray-dalio.png",
+    avatar: "/images/testimonial-ray-dalio.png",
+    avatarPosition: "object-[center_22%]",
   },
   {
     text: "My creativity improved. I can solve problems faster and more easily. I can focus for longer periods of time - and I am happier.",
@@ -18,6 +26,8 @@ const quotes = [
     role: "Founder & CEO, Superhuman",
     logo: "/logos/optimized/Superhuman.webp",
     logoAlt: "Superhuman logo",
+    avatar: "/images/rahul-vohra-headshot.jpeg",
+    avatarPosition: "object-[center_18%]",
   },
   {
     text: "It has given a boost to our overall creativity and performance. Health, well-being, clarity of mind, happiness, and calm have all improved. Significant benefits to myself and our team.",
@@ -26,6 +36,7 @@ const quotes = [
     logo: "/logos/optimized/JetSynthesys.webp",
     logoAlt: "JetSynthesys logo",
     avatar: "/images/testimonial-rajan-navani.jpg",
+    avatarPosition: "object-[center_20%]",
   },
 ];
 
@@ -89,17 +100,34 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-10 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
+              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-8 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
             >
               {quote.avatar ? (
-                <div className="mb-6">
-                  <Image
-                    src={quote.avatar}
-                    alt={`${quote.name} portrait`}
-                    width={88}
-                    height={88}
-                    className="h-34 w-60 mx-auto object-cover ring-2 "
-                  />
+                <div className="mb-7">
+                  <div className="mx-auto max-w-[15.5rem]">
+                    <div className="relative aspect-[4/5] overflow-hidden border border-[hsl(var(--peach)/0.34)] bg-primary-foreground/5 p-2 shadow-[0_24px_60px_-36px_rgba(0,0,0,0.75)]">
+                      <div className="relative h-full overflow-hidden bg-primary">
+                        <Image
+                          src={quote.avatar}
+                          alt={`${quote.name} portrait`}
+                          fill
+                          quality={72}
+                          sizes="(min-width: 768px) 15rem, 70vw"
+                          className={`object-cover ${
+                            quote.avatarPosition ?? "object-center"
+                          }`}
+                        />
+                      </div>
+                    </div>
+                    <div className="-mt-px border border-[hsl(var(--peach)/0.28)] bg-primary-foreground/[0.06] px-4 py-3 text-center">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[hsl(var(--peach))]">
+                        {quote.name}
+                      </p>
+                      <p className="mt-1 text-[11px] leading-[1.45] text-primary-foreground/48">
+                        {quote.role}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ) : null}
               <div className="">
@@ -126,15 +154,67 @@ export function Testimonials() {
                   className="h-auto max-h-8 w-auto max-w-full object-contain"
                 />
               </div>
-              <p className="text-[12px] uppercase tracking-[0.15em] text-[hsl(var(--peach))] font-medium">
-                {quote.name}
-              </p>
-              <p className="text-[12px] text-primary-foreground/45 mt-1">
-                {quote.role}
-              </p>
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-16 md:mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-8 max-w-2xl"
+          >
+            <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary-foreground/45">
+              Video Stories
+            </p>
+            <h3 className="mt-3 font-serif text-3xl font-light leading-tight text-primary-foreground sm:text-4xl">
+              Hear the practice through the people who carry it.
+            </h3>
+          </motion.div>
+
+          <div className="grid gap-5 lg:grid-cols-2">
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
+            >
+              <LiteVideoEmbed
+                src={DR_TEJAS_VIDEO_SRC}
+                posterSrc={DR_TEJAS_VIDEO_POSTER}
+                title="Dr. Tejas Patel on Transcendental Meditation"
+                teaser={{
+                  eyebrow: "Watch Dr. Tejas Patel",
+                  title: "Chairman & Chief Interventional Cardiologist",
+                  description:
+                    "Apex Heart Institute, Ahmedabad, on the role of TM in high-stakes work.",
+                }}
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.12 }}
+              className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
+            >
+              <LiteYouTubeEmbed
+                videoId="q90vblzhccU"
+                title="Maharishi Mahesh Yogi and the Vedic roots of Transcendental Meditation"
+                teaser={{
+                  eyebrow: "Watch Maharishi Mahesh Yogi",
+                  title: "The Vedic roots of Transcendental Meditation",
+                  description:
+                    "The teacher who brought TM to the modern world in its original purity.",
+                }}
+              />
+            </motion.div>
+          </div>
         </div>
 
         <motion.div
