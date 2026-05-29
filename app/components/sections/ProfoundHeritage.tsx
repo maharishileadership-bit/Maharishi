@@ -165,30 +165,7 @@ export function ProfoundHeritage() {
               </motion.div>
             ))}
 
-            {/* Bottom accent: authenticity note */}
-            <div
-              className="rounded-2xl p-5 mt-2"
-              style={{
-                background: "linear-gradient(135deg, hsl(var(--peach) / 0.08), hsl(var(--sky) / 0.1))",
-                border: "1px solid hsl(var(--peach-deep) / 0.12)",
-              }}
-            >
-              <p
-                className="text-[11px] uppercase tracking-[0.22em] font-semibold mb-2"
-                style={{ color: "hsl(var(--peach-deep))" }}
-              >
-                Taught one-to-one
-              </p>
-              <p
-                className="font-sans leading-[1.75]"
-                style={{
-                  fontSize: "0.88rem",
-                  color: "hsl(var(--primary) / 0.65)",
-                }}
-              >
-                Every student learns directly from a certified teacher — preserving the precision and authenticity of an unbroken oral transmission spanning millennia.
-              </p>
-            </div>
+            
           </motion.div>
 
         </div>
