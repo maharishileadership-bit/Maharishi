@@ -10,7 +10,7 @@ const transformationPoints = [
     index: "01",
     title: "Clarity in Decision-Making",
     desc: "Frontal brain coherence restores the mind's ability to see clearly under pressure.",
-    image: "/images/Brain-waves.png",
+    image: "/images/clarity.png",
     reference: "https://doi.org/10.1016/j.ijpsycho.2008.09.007",
   },
   {

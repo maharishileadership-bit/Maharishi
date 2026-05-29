@@ -267,7 +267,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center gap-2.5 rounded-full border border-amber-300/25 bg-amber-950/20 px-5 py-2 font-sans text-xs font-medium uppercase tracking-[0.2em] text-amber-200/80 backdrop-blur-sm sm:text-sm">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-400" />
-                Maharishi Center for Leadership
+                Maharishi Leadership Center
               </span>
             </motion.div>
 

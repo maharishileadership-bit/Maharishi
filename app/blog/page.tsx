@@ -78,10 +78,10 @@ function BlogCard({
     <Link href={`/blog/${post.slug}`} className="group block h-full">
       <article className="flex min-h-[37.25rem] flex-col overflow-hidden rounded-[1.25rem] border border-border/80 bg-card/90 shadow-[0_28px_90px_-62px_rgba(7,29,64,0.55)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1 hover:border-[hsl(var(--peach-deep))]/45 hover:shadow-[0_32px_90px_-56px_hsl(var(--peach-deep)/0.36)]">
         <div className="relative h-[15rem] overflow-hidden">
-          <Image
+          <img
             src={thumbnail}
             alt={post.thumbnailAlt}
-            fill
+            
             sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />

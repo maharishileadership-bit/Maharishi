@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-1.png",
+    thumbnail: "https://meditationlifestyle.com/wp-content/uploads/2025/09/discover-tm.jpg",
     thumbnailAlt:
       "Executive leader practicing Transcendental Meditation for clarity and resilience",
     tags: ["Transcendental Meditation", "TM technique", "Leadership"],
@@ -303,7 +303,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-2.png",
+    thumbnail: "https://my.clevelandclinic.org/-/scassets/images/org/care-pages/primary-care/holistic-medicine-feature.jpg",
     thumbnailAlt:
       "Heart health and stress reduction concept for leaders in India",
     tags: ["Heart Disease", "Stress Reduction", "Prevention"],
@@ -520,291 +520,85 @@ export const blogPosts: BlogPost[] = [
     <span style="color:#eac153;">Reference</span> Links Used
   </h2>
 
-  <div style="margin-bottom:34px;">
+  <ul style="padding-left:22px; font-size:18px; line-height:1.9;">
 
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Transcendental Meditation, What Is TM
-    </p>
-
-    <a href="https://www.tm.org/en-us/meditation-techniques"
+  <li>
+    <a href="https://www.who.int/india/health-topics/cardiovascular-diseases"
        target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.tm.org/en-us/meditation-techniques
+       style="color:#0f2c4d; text-decoration:underline;">
+       WHO India – Cardiovascular Diseases
     </a>
+  </li>
 
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Transcendental Meditation Benefits, Better Brain Function
-    </p>
-
-    <a href="https://www.tm.org/en-us/benefits/brain"
+  <li>
+    <a href="https://www.who.int/en/news-room/fact-sheets/detail/cardiovascular-diseases-%28cvds%29"
        target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.tm.org/en-us/benefits/brain
+       style="color:#0f2c4d; text-decoration:underline;">
+       WHO – Cardiovascular Diseases Fact Sheet
     </a>
+  </li>
 
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Autonomic and EEG Patterns during Eyes-Closed Rest and Transcendental Meditation
-    </p>
-
-    <a href="https://www.sciencedirect.com/science/article/pii/S1053810099904038"
+  <li>
+    <a href="https://www.nature.com/articles/s41569-025-01235-x"
        target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.sciencedirect.com/science/article/pii/S1053810099904038
+       style="color:#0f2c4d; text-decoration:underline;">
+       Nature Reviews Cardiology
     </a>
+  </li>
 
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Participation in the Transcendental Meditation Program and Frontal EEG Coherence during Concept Learning
-    </p>
-
-    <a href="https://www.tandfonline.com/doi/abs/10.3109/00207458608985634"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.tandfonline.com/doi/abs/10.3109/00207458608985634
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Short-Term Longitudinal Effects of the Transcendental Meditation Technique on EEG Power and Coherence
-    </p>
-
-    <a href="https://www.tandfonline.com/doi/abs/10.3109/00207458108985827"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.tandfonline.com/doi/abs/10.3109/00207458108985827
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Prefrontal Cortex and Executive Function
-    </p>
-
-    <a href="https://www.verywellhealth.com/prefrontal-cortex-5220699"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.verywellhealth.com/prefrontal-cortex-5220699
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:10px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Maharishi Center for Leadership
-    </p>
-
-    <a href="https://www.maharishileadershipcenter.com/"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.maharishileadershipcenter.com/
-    </a>
-
-  </div>
-
-</div>
-
-
-
-<div style="margin-top:60px; padding:36px; background:#ffffff; border-radius:20px; border:1px solid #d9e4ef;">
-
-  <h2 style="font-size:42px; font-weight:400; color:#0f2c4d; margin-bottom:30px; line-height:1.3;">
-    <span style="color:#eac153;">Reference</span> Links Used
-  </h2>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Mayo Clinic, Job Burnout: How to Spot It and Take Action
-    </p>
-
-    <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Deloitte, Workplace Burnout Survey
-    </p>
-
-    <a href="https://www2.deloitte.com/us/en/pages/about-deloitte/articles/burnout-survey.html"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www2.deloitte.com/us/en/pages/about-deloitte/articles/burnout-survey.html
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Official Transcendental Meditation Website, What Is TM
-    </p>
-
-    <a href="https://ps.tm.org/"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://ps.tm.org/
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      American Heart Association, Meditation to Boost Health and Well-Being
-    </p>
-
+  <li>
     <a href="https://www.heart.org/en/healthy-living/healthy-lifestyle/mental-health-and-wellbeing/meditation-to-boost-health-and-wellbeing"
        target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.heart.org/en/healthy-living/healthy-lifestyle/mental-health-and-wellbeing/meditation-to-boost-health-and-wellbeing
+       style="color:#0f2c4d; text-decoration:underline;">
+       American Heart Association – Meditation to Boost Health and Well-Being
     </a>
+  </li>
 
-  </div>
-
-  <div style="margin-bottom:10px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Maharishi Center for Leadership
-    </p>
-
-    <a href="https://www.maharishileadershipcenter.com/"
+  <li>
+    <a href="https://www.nature.com/articles/jhh20156"
        target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.maharishileadershipcenter.com/
+       style="color:#0f2c4d; text-decoration:underline;">
+       Journal of Human Hypertension
     </a>
+  </li>
 
-  </div>
+  <li>
+    <a href="https://academic.oup.com/ajh/article/21/3/310/102286"
+       target="_blank"
+       style="color:#0f2c4d; text-decoration:underline;">
+       American Journal of Hypertension
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.112.967406"
+       target="_blank"
+       style="color:#0f2c4d; text-decoration:underline;">
+       Circulation Cardiovascular Outcomes
+    </a>
+  </li>
+
+  <li>
+    <a href="https://maharishi-leadership.vercel.app/"
+       target="_blank"
+       style="color:#0f2c4d; text-decoration:underline;">
+       Maharishi Center for Leadership
+    </a>
+  </li>
+
+</ul>
+
+
 
 </div>
 
 
 
-<div style="margin-top:60px; padding:36px; background:#ffffff; border-radius:20px; border:1px solid #d9e4ef;">
 
-  <h2 style="font-size:42px; font-weight:400; color:#0f2c4d; margin-bottom:30px; line-height:1.3;">
-    <span style="color:#eac153;">Reference</span> Links Used
-  </h2>
 
-  <div style="margin-bottom:34px;">
 
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Official Transcendental Meditation Website, Meditation Techniques
-    </p>
 
-    <a href="https://www.tm.org/en-us/meditation-techniques"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.tm.org/en-us/meditation-techniques
-    </a>
 
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Official TM Website, What Is TM
-    </p>
-
-    <a href="https://ps.tm.org/"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://ps.tm.org/
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Autonomic and EEG Patterns during Eyes-Closed Rest and Transcendental Meditation
-    </p>
-
-    <a href="https://www.sciencedirect.com/science/article/pii/S1053810099904038"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.sciencedirect.com/science/article/pii/S1053810099904038
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Functional Neuroanatomy of Meditation, Review and Meta-Analysis
-    </p>
-
-    <a href="https://arxiv.org/abs/1603.06342"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://arxiv.org/abs/1603.06342
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Gallup, State of the Global Workplace 2026
-    </p>
-
-    <a href="https://www.gallup.com/workplace/697904/state-of-the-global-workplace-global-data.aspx"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.gallup.com/workplace/697904/state-of-the-global-workplace-global-data.aspx
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:34px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Deloitte, Workplace Burnout Survey
-    </p>
-
-    <a href="https://www2.deloitte.com/us/en/pages/about-deloitte/articles/burnout-survey.html"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www2.deloitte.com/us/en/pages/about-deloitte/articles/burnout-survey.html
-    </a>
-
-  </div>
-
-  <div style="margin-bottom:10px;">
-
-    <p style="font-size:24px; color:#0f2c4d; margin-bottom:10px; font-weight:500;">
-      Maharishi Center for Leadership
-    </p>
-
-    <a href="https://www.maharishileadershipcenter.com/"
-       target="_blank"
-       style="font-size:18px; color:#0f2c4d; text-decoration:underline; word-break:break-word;">
-       https://www.maharishileadershipcenter.com/
-    </a>
-
-  </div>
 
 </div>
 
@@ -840,7 +634,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-3.png",
+    thumbnail: "https://meditationlifestyle.com/wp-content/uploads/2012/07/gamma-brainwave-meditation-study_3.jpg",
     thumbnailAlt:
       "Brain coherence and executive performance leadership concept",
     tags: ["Brain Coherence", "Executive Performance", "Neuroscience"],
@@ -1283,7 +1077,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-4.png",
+    thumbnail: "https://tm-ireland.org/wp-content/uploads/2013/11/posterA2-2-deeprest-052.jpg",
     thumbnailAlt:
       "Executive burnout recovery through deep rest and resilience",
     tags: ["Executive Burnout", "Deep Rest", "Resilience"],
@@ -1725,7 +1519,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-5.png",
+    thumbnail: "https://static.wixstatic.com/media/98f810_601fe2451f0940c792e319c51d99a8af~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/98f810_601fe2451f0940c792e319c51d99a8af~mv2.jpg",
     thumbnailAlt:
       "Restful alertness and fourth state of consciousness for leaders",
     tags: ["Restful Alertness", "Consciousness", "TM Science"],
@@ -2204,7 +1998,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-6.jpg",
+    thumbnail: "https://static01.nyt.com/images/2011/03/20/fashion/TM/TM-jumbo.jpg?quality=75&auto=webp",
     thumbnailAlt:
       "High performers using Transcendental Meditation for sustainable performance",
     tags: ["High Performance", "Executive Wellness", "TM"],
@@ -2787,7 +2581,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-7.jpg",
+    thumbnail: "https://images.everydayhealth.com/images/emotional-health/meditation/highly-successful-people-who-meditate-every-day-marc-benioff-rm-722x406.jpg?w=840",
     thumbnailAlt:
       "Leader moving from stress reaction to calm leadership presence",
     tags: ["Leadership Presence", "Emotional Intelligence", "Stress"],
@@ -3361,7 +3155,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-8.jpg",
+    thumbnail: "https://wander-mag.com/wp-content/uploads/2025/03/TM-Class.jpg",
     thumbnailAlt:
       "Twenty minute meditation practice for sharper executive decisions",
     tags: ["Decision-Making", "Executive Clarity", "Focus"],
@@ -3897,7 +3691,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-9.jpg",
+    thumbnail: "https://static.wixstatic.com/media/8fef3f_786e237bab834455959bbf43b5ecebbd~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/8fef3f_786e237bab834455959bbf43b5ecebbd~mv2.jpg",
     thumbnailAlt:
       "Transcendental Meditation compared with mindfulness breathwork and concentration",
     tags: ["TM vs Mindfulness", "Breathwork", "Effortless Meditation"],
@@ -4542,7 +4336,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/blog-10.jpg",
+    thumbnail: "https://bookretreats.com/g/wp-content/uploads/2024/05/savanasa-yoga-retreat.jpeg",
     thumbnailAlt:
       "Sustainable peak performance science for executive leadership",
     tags: ["Peak Performance", "Executive Development", "TM Research"],

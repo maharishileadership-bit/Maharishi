@@ -17,12 +17,12 @@ export function Footer() {
                 className="w-12 h-12 rounded-full object-cover shrink-0"
               />
               <span className="font-serif text-xl">
-                Maharishi Center 
+                Maharishi 
                 {" "}
               <em
                 className={`not-italic text-[hsl(var(--peach))]`}
               >
-                for Leadership
+                Leadership Center
               </em>
               </span>
             </div>

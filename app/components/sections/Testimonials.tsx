@@ -17,8 +17,7 @@ const quotes = [
     role: "Founder & Co-CIO, Bridgewater Associates",
     logo: "/logos/optimized/Bridgewater_Associates.webp",
     logoAlt: "Bridgewater Associates logo",
-    avatar: "/images/testimonial-ray-dalio.png",
-    avatarPosition: "object-[center_22%]",
+    avatar: "/images/Benefits-ray-dalio.png",
   },
   {
     text: "My creativity improved. I can solve problems faster and more easily. I can focus for longer periods of time - and I am happier.",
@@ -26,8 +25,6 @@ const quotes = [
     role: "Founder & CEO, Superhuman",
     logo: "/logos/optimized/Superhuman.webp",
     logoAlt: "Superhuman logo",
-    avatar: "/images/rahul-vohra-headshot.jpeg",
-    avatarPosition: "object-[center_18%]",
   },
   {
     text: "It has given a boost to our overall creativity and performance. Health, well-being, clarity of mind, happiness, and calm have all improved. Significant benefits to myself and our team.",
@@ -36,7 +33,22 @@ const quotes = [
     logo: "/logos/optimized/JetSynthesys.webp",
     logoAlt: "JetSynthesys logo",
     avatar: "/images/testimonial-rajan-navani.jpg",
-    avatarPosition: "object-[center_20%]",
+  },
+  {
+    text: "In 2024, I learned TM and never looked back. I even got my entire family to learn it. I can absolutely guarantee its results for enhancing leadership, unlocking creativity, and transforming both your personal and professional life. It grounds you to achieve everything you wish for.",
+    name: "Sandeep Railwal",
+    role: "Founder Polygon",
+    logo: "/logos/optimized/polygon.png",
+    logoAlt: "Polygon logo",
+    avatar: "/images/testimonial-rajan-navani.jpg",
+  },
+  {
+    text: "I work in very high stress situations. The last few months since I learned and have been practicing TM, it has helped me to handle deep stress on a day-to-day basis. I strongly recommend everyone to learn this practice and make it a part of your daily life  ",
+    name: "Tejal Patel",
+    role: "Chairman & Chief Interventional Cardiologist at Apex Heart Institute, Ahmedabad, Gujrat",
+    logo: "/logos/optimized/Apex-Heart.png",
+    logoAlt: "JetSynthesys logo",
+    avatar: "/images/testimonial-rajan-navani.jpg",
   },
 ];
 
@@ -100,36 +112,19 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-8 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
+              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-10 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
             >
-              {quote.avatar ? (
-                <div className="mb-7">
-                  <div className="mx-auto max-w-[15.5rem]">
-                    <div className="relative aspect-[4/5] overflow-hidden border border-[hsl(var(--peach)/0.34)] bg-primary-foreground/5 p-2 shadow-[0_24px_60px_-36px_rgba(0,0,0,0.75)]">
-                      <div className="relative h-full overflow-hidden bg-primary">
-                        <Image
-                          src={quote.avatar}
-                          alt={`${quote.name} portrait`}
-                          fill
-                          quality={72}
-                          sizes="(min-width: 768px) 15rem, 70vw"
-                          className={`object-cover ${
-                            quote.avatarPosition ?? "object-center"
-                          }`}
-                        />
-                      </div>
-                    </div>
-                    <div className="-mt-px border border-[hsl(var(--peach)/0.28)] bg-primary-foreground/[0.06] px-4 py-3 text-center">
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[hsl(var(--peach))]">
-                        {quote.name}
-                      </p>
-                      <p className="mt-1 text-[11px] leading-[1.45] text-primary-foreground/48">
-                        {quote.role}
-                      </p>
-                    </div>
-                  </div>
+              {/* {quote.avatar ? (
+                <div className="mb-6">
+                  <Image
+                    src={quote.avatar}
+                    alt={`${quote.name} portrait`}
+                    width={88}
+                    height={88}
+                    className="h-34 w-60 mx-auto object-cover ring-2 "
+                  />
                 </div>
-              ) : null}
+              ) : null} */}
               <div className="">
               <span className="font-serif text-xl sm:text-2xl md:text-3xl text-[hsl(var(--peach))] leading-none mb-2">
                 &ldquo;
@@ -154,6 +149,12 @@ export function Testimonials() {
                   className="h-auto max-h-8 w-auto max-w-full object-contain"
                 />
               </div>
+              <p className="text-[12px] uppercase tracking-[0.15em] text-[hsl(var(--peach))] font-medium">
+                {quote.name}
+              </p>
+              <p className="text-[12px] text-primary-foreground/45 mt-1">
+                {quote.role}
+              </p>
               </div>
             </motion.div>
           ))}
@@ -190,8 +191,24 @@ export function Testimonials() {
                 teaser={{
                   eyebrow: "Watch Dr. Tejas Patel",
                   title: "Chairman & Chief Interventional Cardiologist",
-                  description:
-                    "Apex Heart Institute, Ahmedabad, on the role of TM in high-stakes work.",
+                  }}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
+            >
+              <LiteVideoEmbed
+                src="https://res.cloudinary.com/dycpdti0a/video/upload/q_auto/f_auto/v1780028027/video3433815413_rgmtzd.mp4"
+                posterSrc="/images/sandeep.png"
+                title="Dr. Tejas Patel on Transcendental Meditation"
+                teaser={{
+                  eyebrow: "Watch Sandeep Railwal",
+                  title: "Founder Polygon",
+                 
                 }}
               />
             </motion.div>
@@ -207,11 +224,9 @@ export function Testimonials() {
                 videoId="q90vblzhccU"
                 title="Maharishi Mahesh Yogi and the Vedic roots of Transcendental Meditation"
                 teaser={{
-                  eyebrow: "Watch Maharishi Mahesh Yogi",
-                  title: "The Vedic roots of Transcendental Meditation",
-                  description:
-                    "The teacher who brought TM to the modern world in its original purity.",
-                }}
+                  eyebrow: "Watch Martin Scorsese & Ray Dalio",
+                  title: "Bridgewater Associates founder Ray Dalio and Academy Award-winning filmmaker Martin Scorcese",
+                 }}
               />
             </motion.div>
           </div>

@@ -145,10 +145,9 @@ function RelatedPostCard({ post }: { post: BlogPostSummary }) {
     <Link href={`/blog/${post.slug}`} className="group block h-full">
       <article className="flex h-full flex-col overflow-hidden rounded-[1rem] border border-border/80 bg-card/90 shadow-[0_24px_80px_-64px_rgba(7,29,64,0.5)] backdrop-blur">
         <div className="relative h-44 overflow-hidden">
-          <Image
+          <img
             src={thumbnail}
             alt={post.thumbnailAlt}
-            fill
             sizes="(min-width: 1024px) 28vw, 100vw"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -262,13 +261,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         />
 
         <section className="relative h-[25rem] overflow-hidden border-b border-border/75">
-          <Image
+          <img
             src={thumbnail}
             alt={post.thumbnailAlt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
+            
+            className="object-cover w-full  "
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-[hsl(var(--cream))/0.38] to-[hsl(var(--cream))]" />
         </section>
