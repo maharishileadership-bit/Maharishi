@@ -127,7 +127,7 @@ export function MobileSidebar({
                 className="book-pill inline-flex w-full items-center justify-between rounded-full  px-8 py-4 text-sm font-semibold bg-primary
                 text-white uppercase tracking-[0.2em] text-primary shadow-[0_18px_50px_-28px_rgba(7,29,64,0.35)]"
               >
-                <span className="relative z-10">Consult Now</span>
+                <span className="relative z-10">Let’s Talk</span>
                 <span className="book-pill-dot relative z-10" />
               </Link>
             </div>
