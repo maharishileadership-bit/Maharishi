@@ -260,12 +260,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <section className="relative h-[25rem] overflow-hidden border-b border-border/75">
+        <section className="relative h-full  sm:h-[30rem] overflow-hidden border-b border-border/75">
           <img
             src={thumbnail}
             alt={post.thumbnailAlt}
             
-            className="object-cover w-full  "
+            className="object-cover w-[94%] mx-auto "
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-[hsl(var(--cream))/0.38] to-[hsl(var(--cream))]" />
         </section>
@@ -348,7 +348,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="min-w-0">
               {articleHtml.trim() ? (
                 <div
-                  className="blog-rich-content rounded-[1.15rem] border border-border/80 bg-card/90 p-6 shadow-[0_28px_90px_-68px_rgba(7,29,64,0.55)] backdrop-blur sm:p-8"
+                  className="blog-rich-content rounded-[1.15rem]   backdrop-blur "
                   dangerouslySetInnerHTML={{ __html: preparedArticle.html }}
                 />
               ) : null}
