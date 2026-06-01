@@ -44,7 +44,7 @@ const quotes = [
   },
   {
     text: "I work in very high stress situations. The last few months since I learned and have been practicing TM, it has helped me to handle deep stress on a day-to-day basis. I strongly recommend everyone to learn this practice and make it a part of your daily life  ",
-    name: "Tejal Patel",
+    name: "Tejas Patel",
     role: "Chairman & Chief Interventional Cardiologist at Apex Heart Institute, Ahmedabad, Gujrat",
     logo: "/logos/optimized/Apex-Heart.png",
     logoAlt: "JetSynthesys logo",
@@ -105,7 +105,63 @@ export function Testimonials() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-primary-foreground/[0.08]">
-          {quotes.map((quote, index) => (
+          {quotes.slice(0, 3).map((quote, index) => (
+            <motion.div
+              key={quote.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.15 }}
+              className="bg-[hsl(var(--primary)/0.88)] p-5 md:p-10 transition-colors hover:bg-[hsl(var(--peach)/0.08)]"
+            >
+              {/* {quote.avatar ? (
+                <div className="mb-6">
+                  <Image
+                    src={quote.avatar}
+                    alt={`${quote.name} portrait`}
+                    width={88}
+                    height={88}
+                    className="h-34 w-60 mx-auto object-cover ring-2 "
+                  />
+                </div>
+              ) : null} */}
+              <div className="">
+              <span className="font-serif text-xl sm:text-2xl md:text-3xl text-[hsl(var(--peach))] leading-none mb-2">
+                &ldquo;
+              </span>
+              <span className="font-serif text-lg sm:text-xl md:text-2xl italic font-light leading-[1.5] text-primary-foreground mb-8">
+                {quote.text}
+              </span>
+              <span className="font-serif text-xl sm:text-2xl md:text-3xl text-[hsl(var(--peach))] leading-none mb-2">
+                &rdquo;
+              </span>
+              </div>
+
+              <div className="mt-4 sm:mt-6 md:mt-8">
+              <div className="mb-4 flex h-14 w-32 items-center justify-center rounded-2xl bg-white px-4 shadow-[0_20px_36px_-28px_rgba(255,255,255,0.6)]">
+                <Image
+                  src={quote.logo}
+                  alt={quote.logoAlt}
+                  width={128}
+                  height={64}
+                  quality={72}
+                  sizes="128px"
+                  className="h-auto max-h-8 w-auto max-w-full object-contain"
+                />
+              </div>
+              <p className="text-[12px] uppercase tracking-[0.15em] text-[hsl(var(--peach))] font-medium">
+                {quote.name}
+              </p>
+              <p className="text-[12px] text-primary-foreground/45 mt-1">
+                {quote.role}
+              </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="mt-px grid grid-cols-1 md:grid-cols-2 gap-px bg-primary-foreground/[0.08] md:w-2/3 md:mx-auto">
+        {quotes.slice(3).map((quote, index) => (
             <motion.div
               key={quote.name}
               initial={{ opacity: 0, y: 30 }}
@@ -181,19 +237,19 @@ export function Testimonials() {
               initial={{ opacity: 0, y: 26 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.12 }}
               className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
             >
-              <LiteVideoEmbed
-                src={DR_TEJAS_VIDEO_SRC}
-                posterSrc={DR_TEJAS_VIDEO_POSTER}
-                title="Dr. Tejas Patel on Transcendental Meditation"
+              <LiteYouTubeEmbed
+                videoId="q90vblzhccU"
+                title="Maharishi Mahesh Yogi and the Vedic roots of Transcendental Meditation"
                 teaser={{
-                  eyebrow: "Watch Dr. Tejas Patel",
-                  title: "Chairman & Chief Interventional Cardiologist",
-                  }}
+                  eyebrow: "Watch Martin Scorsese & Ray Dalio",
+                  title: "Bridgewater Associates founder Ray Dalio and Academy Award-winning filmmaker Martin Scorcese",
+                 }}
               />
             </motion.div>
+          
             <motion.div
               initial={{ opacity: 0, y: 26 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -213,20 +269,25 @@ export function Testimonials() {
               />
             </motion.div>
 
-            <motion.div
+  
+            
+          </div>
+          <div className="md:w-1/2 md:mx-auto mt-5">
+          <motion.div
               initial={{ opacity: 0, y: 26 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.12 }}
+              transition={{ duration: 0.8 }}
               className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
             >
-              <LiteYouTubeEmbed
-                videoId="q90vblzhccU"
-                title="Maharishi Mahesh Yogi and the Vedic roots of Transcendental Meditation"
+              <LiteVideoEmbed
+                src={DR_TEJAS_VIDEO_SRC}
+                posterSrc={DR_TEJAS_VIDEO_POSTER}
+                title="Dr. Tejas Patel on Transcendental Meditation"
                 teaser={{
-                  eyebrow: "Watch Martin Scorsese & Ray Dalio",
-                  title: "Bridgewater Associates founder Ray Dalio and Academy Award-winning filmmaker Martin Scorcese",
-                 }}
+                  eyebrow: "Watch Dr. Tejas Patel",
+                  title: "Chairman & Chief Interventional Cardiologist",
+                  }}
               />
             </motion.div>
           </div>

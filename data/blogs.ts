@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://meditationlifestyle.com/wp-content/uploads/2025/09/discover-tm.jpg",
+    thumbnail: "/blogs-images/Effortless.png",
     thumbnailAlt:
       "Executive leader practicing Transcendental Meditation for clarity and resilience",
     tags: ["Transcendental Meditation", "TM technique", "Leadership"],
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://my.clevelandclinic.org/-/scassets/images/org/care-pages/primary-care/holistic-medicine-feature.jpg",
+    thumbnail: "/blogs-images/holistic-medicine-feature.jpg",
     thumbnailAlt:
       "Heart health and stress reduction concept for leaders in India",
     tags: ["Heart Disease", "Stress Reduction", "Prevention"],
@@ -319,7 +319,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://meditationlifestyle.com/wp-content/uploads/2012/07/gamma-brainwave-meditation-study_3.jpg",
+    thumbnail: "/blogs-images/coherence.png",
     thumbnailAlt:
       "Brain coherence and executive performance leadership concept",
     tags: ["Brain Coherence", "Executive Performance", "Neuroscience"],
@@ -499,7 +499,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://tm-ireland.org/wp-content/uploads/2013/11/posterA2-2-deeprest-052.jpg",
+    thumbnail: "/blogs-images/Burnout.png",
     thumbnailAlt:
       "Executive burnout recovery through deep rest and resilience",
     tags: ["Executive Burnout", "Deep Rest", "Resilience"],
@@ -667,7 +667,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://static.wixstatic.com/media/98f810_601fe2451f0940c792e319c51d99a8af~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/98f810_601fe2451f0940c792e319c51d99a8af~mv2.jpg",
+    thumbnail: "/blogs-images/Restful-Alertness.jpg",
     thumbnailAlt:
       "Restful alertness and fourth state of consciousness for leaders",
     tags: ["Restful Alertness", "Consciousness", "TM Science"],
@@ -833,7 +833,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://static01.nyt.com/images/2011/03/20/fashion/TM/TM-jumbo.jpg?quality=75&auto=webp",
+    thumbnail: "/blogs-images/High-Performers.webp",
     thumbnailAlt:
       "High performers using Transcendental Meditation for sustainable performance",
     tags: ["High Performance", "Executive Wellness", "TM"],
@@ -1002,7 +1002,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://images.everydayhealth.com/images/emotional-health/meditation/highly-successful-people-who-meditate-every-day-marc-benioff-rm-722x406.jpg?w=840",
+    thumbnail: "/blogs-images/stress-reaction.png",
     thumbnailAlt:
       "Leader moving from stress reaction to calm leadership presence",
     tags: ["Leadership Presence", "Emotional Intelligence", "Stress"],
@@ -1168,7 +1168,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://wander-mag.com/wp-content/uploads/2025/03/TM-Class.jpg",
+    thumbnail: "/blogs-images/sharper-decisions.jpg",
     thumbnailAlt:
       "Twenty minute meditation practice for sharper executive decisions",
     tags: ["Decision-Making", "Executive Clarity", "Focus"],
@@ -1340,7 +1340,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://static.wixstatic.com/media/8fef3f_786e237bab834455959bbf43b5ecebbd~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/8fef3f_786e237bab834455959bbf43b5ecebbd~mv2.jpg",
+    thumbnail: "/blogs-images/maharishi-yogi.jpg",
     thumbnailAlt:
       "Transcendental Meditation compared with mindfulness breathwork and concentration",
     tags: ["TM vs Mindfulness", "Breathwork", "Effortless Meditation"],
@@ -1523,7 +1523,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "https://bookretreats.com/g/wp-content/uploads/2024/05/savanasa-yoga-retreat.jpeg",
+    thumbnail: "/blogs-images/sustainable-peak-performance.webp",
     thumbnailAlt:
       "Sustainable peak performance science for executive leadership",
     tags: ["Peak Performance", "Executive Development", "TM Research"],

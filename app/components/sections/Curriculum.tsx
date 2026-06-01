@@ -19,7 +19,7 @@ const modules: readonly CurriculumModule[] = [
     step: "01",
     title: "The TM Technique & Daily Practice",
     subtitle: "Establish the practice correctly from day one.",
-    image: "/images/Pillar-1-Maharishi.png",
+    image: "/images/Pillar-1.png",
     alt: "Person meditating at sunrise",
     imageLabel: "Technique",
     points: [
