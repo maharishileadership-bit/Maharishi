@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/holistic-medicine-feature.jpg",
+    thumbnail: "/blogs-images/heart-health.png",
     thumbnailAlt:
       "Heart health and stress reduction concept for leaders in India",
     tags: ["Heart Disease", "Stress Reduction", "Prevention"],
@@ -667,7 +667,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/Restful-Alertness.jpg",
+    thumbnail: "/blogs-images/restful-alertnes.png",
     thumbnailAlt:
       "Restful alertness and fourth state of consciousness for leaders",
     tags: ["Restful Alertness", "Consciousness", "TM Science"],
@@ -833,7 +833,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/High-Performers.webp",
+    thumbnail: "/blogs-images/high-performers.png",
     thumbnailAlt:
       "High performers using Transcendental Meditation for sustainable performance",
     tags: ["High Performance", "Executive Wellness", "TM"],
@@ -1002,7 +1002,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/stress-reaction.png",
+    thumbnail: "/blogs-images/stress-reduction.png",
     thumbnailAlt:
       "Leader moving from stress reaction to calm leadership presence",
     tags: ["Leadership Presence", "Emotional Intelligence", "Stress"],
@@ -1168,7 +1168,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/sharper-decisions.jpg",
+    thumbnail: "/blogs-images/decision-making.png",
     thumbnailAlt:
       "Twenty minute meditation practice for sharper executive decisions",
     tags: ["Decision-Making", "Executive Clarity", "Focus"],
@@ -1340,7 +1340,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/maharishi-yogi.jpg",
+    thumbnail: "/blogs-images/tm.png",
     thumbnailAlt:
       "Transcendental Meditation compared with mindfulness breathwork and concentration",
     tags: ["TM vs Mindfulness", "Breathwork", "Effortless Meditation"],
@@ -1523,7 +1523,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: defaultAuthorRole,
     publishedAt: "2026-05-21",
     readTime: "",
-    thumbnail: "/blogs-images/sustainable-peak-performance.webp",
+    thumbnail: "/blogs-images/peak-performane.png",
     thumbnailAlt:
       "Sustainable peak performance science for executive leadership",
     tags: ["Peak Performance", "Executive Development", "TM Research"],

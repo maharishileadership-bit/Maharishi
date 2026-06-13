@@ -97,7 +97,7 @@ export function ProfoundHeritage() {
                 color: "hsl(var(--primary) / 0.65)",
               }}
             >
-              Transcendental Meditation is not a new-age concept invented by an influencer. It is a precise, effortless technique preserved over millennia — drawn from the most systematically developed body of knowledge on human consciousness that the world has ever known.
+              Transcendental Meditation is not a new-age concept invented by an influencer. It is a precise, effortless technique preserved over millennia — drawn from the most systematically developed body of knowledge on human consciousness that the world has ever known. Today more than 10 million have benefited in over 140 countries.
             </p>
           </motion.div>
 
