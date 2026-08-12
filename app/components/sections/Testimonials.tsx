@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { LiteVideoEmbed } from "./LiteVideoEmbed";
-import { LiteYouTubeEmbed } from "./LiteYouTubeEmbed";
 
 const DR_TEJAS_VIDEO_SRC =
   "https://res.cloudinary.com/dycpdti0a/video/upload/e_volume:-50/v1778245977/WhatsApp_Video_2026-05-08_at_2.36.52_PM_qrnf3h.mp4";
@@ -240,13 +239,14 @@ export function Testimonials() {
               transition={{ duration: 0.8, delay: 0.12 }}
               className="overflow-hidden border border-primary-foreground/10 bg-primary-foreground/[0.04] shadow-[0_28px_70px_-48px_rgba(0,0,0,0.7)]"
             >
-              <LiteYouTubeEmbed
-                videoId="q90vblzhccU"
-                title="Maharishi Mahesh Yogi and the Vedic roots of Transcendental Meditation"
-                teaser={{
-                  eyebrow: "Watch Martin Scorsese & Ray Dalio",
-                  title: "Bridgewater Associates founder Ray Dalio and Academy Award-winning filmmaker Martin Scorcese",
-                 }}
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7490395115556085760?compact=1"
+                height={399}
+                width={504}
+                frameBorder={0}
+                allowFullScreen
+                title="Embedded LinkedIn post"
+                className="h-[399px] w-full"
               />
             </motion.div>
           

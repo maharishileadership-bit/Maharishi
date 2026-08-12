@@ -91,8 +91,15 @@ export function Footer() {
             All rights reserved.
           </p>
           <p className="text-[11px] text-primary-foreground/30 uppercase tracking-widest">
-            Performance is not only what leaders do. It is how their brain
-            functions.
+            Powered by{" "}
+            <a
+              href="https://ai.arevei.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[hsl(var(--peach))] transition-colors hover:text-primary-foreground"
+            >
+              Arevei
+            </a>
           </p>
         </div>
       </div>
