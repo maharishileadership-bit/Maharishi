@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { LiteVideoEmbed } from "./LiteVideoEmbed";
 
 const DR_TEJAS_VIDEO_SRC =
-  "https://res.cloudinary.com/dycpdti0a/video/upload/e_volume:-50/v1778245977/WhatsApp_Video_2026-05-08_at_2.36.52_PM_qrnf3h.mp4";
+  "https://res.cloudinary.com/dycpdti0a/video/upload/v1788761658/WhatsApp_Video_2026-08-25_at_1.32.51_PM_1_oefrj5.mp4";
 const DR_TEJAS_VIDEO_POSTER =
   "https://res.cloudinary.com/dycpdti0a/video/upload/so_0,w_1280,q_auto,f_jpg/v1778245977/WhatsApp_Video_2026-05-08_at_2.36.52_PM_qrnf3h.jpg";
 
