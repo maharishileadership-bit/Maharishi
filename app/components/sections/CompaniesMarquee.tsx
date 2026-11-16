@@ -3,13 +3,9 @@
 import Image from "next/image";
 
 const companies = [
-  { name: "Google", logo: "google.webp" },
-  { name: "IBM", logo: "ibm.webp" },
   { name: "Bridgewater Associates", logo: "Bridgewater_Associates.webp" },
   { name: "Hewlett-Packard", logo: "hpe.webp" },
   { name: "Ericsson", logo: "Ericsson.webp" },
-  { name: "General Motors", logo: "General_Motors.webp" },
-  { name: "Toyota", logo: "Toyota-logo.webp" },
   { name: "Citi", logo: "Citi.webp" },
   { name: "Citadel", logo: "citadel.webp" },
   { name: "Square", logo: "square.webp" },

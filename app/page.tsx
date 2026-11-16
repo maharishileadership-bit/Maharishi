@@ -20,12 +20,12 @@ export default function Home() {
         <HeroSection />
         <CompaniesMarquee />
         <About />
+        <Testimonials />
         <Science />
         <Benefits />
         <Programme />
         <ProfoundHeritage />
         <Curriculum />
-        <Testimonials />
         <CTA />
       </main>
       <Footer />

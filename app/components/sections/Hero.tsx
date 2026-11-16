@@ -107,6 +107,10 @@ export default function Hero() {
   // Scroll sections
   const s1Opacity = useTransform(smooth, [0, 0.22, 0.45], [1, 1, 0]);
   const s1Y = useTransform(smooth, [0, 0.45], ["0px", "-50px"]);
+  // The first-screen CTA is only clickable while it is visible
+  const s1PointerEvents = useTransform(s1Opacity, (v) =>
+    v > 0.3 ? "auto" : "none"
+  );
 
   const s2Opacity = useTransform(smooth, [0.42, 0.68], [0, 1]);
   const s2Y = useTransform(smooth, [0.42, 0.68], ["50px", "0px"]);
@@ -297,6 +301,23 @@ export default function Hero() {
                 World-Class Brain Functioning.
               </span>
             </h1>
+
+            <motion.div
+              className="mt-8 sm:mt-10"
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.75, delay: 0.6, ease: "easeOut" }}
+              style={{ pointerEvents: s1PointerEvents }}
+            >
+              <Link
+                href="/#contact"
+                className="book-pill inline-flex items-center gap-4 rounded-full border bg-primary px-7 py-3.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)] hover:bg-white hover:text-primary"
+                data-testid="hero-cta"
+              >
+                <span className="relative z-10">Book a Conversation</span>
+                <span className="book-pill-dot relative z-10" />
+              </Link>
+            </motion.div>
 
             <motion.div
               className="absolute -bottom-20 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"

@@ -6,11 +6,11 @@ export type SiteLink = {
 
 export const primaryNavLinks: SiteLink[] = [
   { label: "The Premise", href: "/#about" },
+  { label: "Voices", href: "/#testimonials" },
   { label: "Science", href: "/#science" },
   { label: "Benefits", href: "/#benefits" },
   { label: "Programme", href: "/#programme" },
   { label: "Curriculum", href: "/#curriculum" },
-  { label: "Voices", href: "/#testimonials" },
   { label: "Blog", href: "/blog" },
 ];
 

@@ -74,23 +74,32 @@ export function Navbar() {
               className="book-pill ml-2 inline-flex items-center gap-4 rounded-full border bg-primary text-white px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] hover:bg-white hover:text-primary shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
               data-testid="nav-cta"
             >
-              <span className="relative z-10">Let’s Talk</span>
+              <span className="relative z-10">Book a Conversation</span>
               <span className="book-pill-dot relative z-10" />
             </Link>
           </nav>
 
-          <button
-            type="button"
-            className={`z-50 rounded-full p-2 transition-colors lg:hidden ${
-              isScrolled || !isHome
-                ? "text-primary hover:bg-primary/5"
-                : "text-primary-foreground hover:bg-white/10"
-            }`}
-            onClick={() => setOpen(true)}
-            aria-label="Open menu"
-          >
-            <Menu className="h-5 w-5" />
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <Link
+              href="/#contact"
+              className="inline-flex items-center rounded-full border bg-primary px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_18px_38px_-24px_rgba(7,29,64,0.22)]"
+              data-testid="nav-cta-mobile"
+            >
+              Book a Conversation
+            </Link>
+            <button
+              type="button"
+              className={`z-50 rounded-full p-2 transition-colors ${
+                isScrolled || !isHome
+                  ? "text-primary hover:bg-primary/5"
+                  : "text-primary-foreground hover:bg-white/10"
+              }`}
+              onClick={() => setOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </motion.header>
 

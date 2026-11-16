@@ -8,6 +8,7 @@ import {
   siteTitle,
   siteUrl,
 } from "@/app/lib/site";
+import { HashLinkScroll } from "@/app/components/HashLinkScroll";
 import "./globals.css";
 
 const bodyFont = Geist({
@@ -177,6 +178,7 @@ export default function RootLayout({
             };
           `}
         </Script> */}
+        <HashLinkScroll />
         {children}
       </body>
     </html>

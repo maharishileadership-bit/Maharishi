@@ -33,7 +33,7 @@ export function About() {
   return (
     <section id="about" className="overflow-hidden bg-card py-18 md:py-30">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 items-start gap-14 lg:items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 xl:gap-20">
+        <div className="grid grid-cols-1 items-start gap-14 lg:items-center lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-16 xl:gap-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -52,13 +52,13 @@ export function About() {
               </em>
             </h2>
 
-            <div className="mt-8 max-w-[34rem] overflow-hidden rounded-[2rem] sm:p-5">
-              <div className="relative aspect-[10/9] w-full overflow-hidden rounded-[1.35rem]">
+            <div className="mt-8">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.35rem] sm:aspect-[16/9] lg:aspect-[3/2]">
                 <Image
                   src="/images/premise-main-c.jpg"
                   alt="Calm senior professional seated at his desk"
                   fill
-                  sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 42vw, 100vw"
+                  sizes="(min-width: 1024px) 36vw, 100vw"
                   className="object-cover object-top"
                 />
               </div>
@@ -108,7 +108,7 @@ export function About() {
 
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-6 grid gap-4 xl:grid-cols-3">
             {transformationPoints.map((point) => (
               <article
                 key={point.title}

@@ -55,10 +55,7 @@ const companies = [
   { name: "Bridgewater Associates", logo: "/logos/optimized/Bridgewater_Associates.webp" },
   { name: "Superhuman", logo: "/logos/optimized/Superhuman.webp" },
   { name: "JetSynthesys", logo: "/logos/optimized/JetSynthesys.webp" },
-  { name: "Google", logo: "/logos/optimized/google.webp" },
-  { name: "IBM", logo: "/logos/optimized/ibm.webp" },
   { name: "Citadel", logo: "/logos/optimized/citadel.webp" },
-  { name: "Toyota", logo: "/logos/optimized/Toyota-logo.webp" },
   { name: "Tata Tea", logo: "/logos/optimized/tatatea.webp" },
 ];
 
@@ -303,7 +300,7 @@ export function Testimonials() {
           <div className="mb-5 text-[11px] text-center uppercase tracking-[0.28em] text-primary-foreground/45">
             Leaders and teams from institutions such as
           </div>
-          <div className="grid gap-2 md:gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
+          <div className="grid gap-2 md:gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 md:max-w-4xl md:mx-auto">
             {companies.map((company) => (
               <div
                 key={company.name}
