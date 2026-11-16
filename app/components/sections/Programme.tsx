@@ -126,11 +126,11 @@ export function Programme() {
                             animation: "breathe 6s ease-in-out infinite",
                           }}
                         ><Image
-                                         src="/images/ken-gunsberger.png"
-                                         alt="Ken Gunsberger, Transcendental Meditation teacher and programme guide"
+                                         src="/images/programme-main.jpg"
+                                         alt="Business leader speaking on stage"
                                          fill
                                          sizes="(min-width: 1024px) 26rem, 100vw"
-                                         className="object-cover"
+                                         className="object-cover object-top"
                                        /></div>
                       </div>
                       <div className="absolute inset-0 flex items-center justify-center">

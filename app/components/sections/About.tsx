@@ -10,21 +10,21 @@ const transformationPoints = [
     index: "01",
     title: "Clarity in Decision-Making",
     desc: "Frontal brain coherence restores the mind's ability to see clearly under pressure.",
-    image: "/images/clarity.png",
+    image: "/images/clarity-decision-making.jpg",
     reference: "https://doi.org/10.1016/j.ijpsycho.2008.09.007",
   },
   {
     index: "02",
     title: "Emotional Intelligence",
     desc: "Deep rest dissolves reactivity — what remains is steadiness, empathy, and presence.",
-    image: "/images/Emotional-Intelligence-Maharishi.jpg",
+    image: "/images/emotional-intelligence.jpg",
     reference: "https://www.thepermanentejournal.org/doi/10.7812/TPP/17-172",
   },
   {
     index: "03",
     title: "Sustained Focus",
     desc: "Alpha coherence across the brain sustains attention without effort or fatigue.",
-    image: "/images/Focus-Maharishi.jpg",
+    image: "/images/sustained-focus.jpg",
     reference: "https://doi.org/10.1038/s41598-025-14898-w",
   },
 ] as const;
@@ -33,7 +33,7 @@ export function About() {
   return (
     <section id="about" className="overflow-hidden bg-card py-18 md:py-30">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 xl:gap-20">
+        <div className="grid grid-cols-1 items-start gap-14 lg:items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 xl:gap-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -46,22 +46,22 @@ export function About() {
               The Premise
             </p>
             <h2 className=" font-serif text-4xl leading-[1.03] font-light text-primary sm:text-5xl xl:text-6xl">
-              One Effortless Practice.{" "}
+              Benefits That Last{" "}
               <em className="italic text-[hsl(var(--peach-deep))]">
-                A Lifetime of Benefits.
+                for Years
               </em>
             </h2>
 
             <div className="mt-8 max-w-[34rem] overflow-hidden rounded-[2rem] sm:p-5">
-              <Image
-                src="/images/effortless-practice.png"
-                width={500}
-                height={305}
-                alt="Neuroscience illustration of brain coherence during Transcendental Meditation"
-                sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 42vw, 100vw"
-                quality={68}
-                className="h-auto w-full rounded-[1.35rem] object-contain"
-              />
+              <div className="relative aspect-[10/9] w-full overflow-hidden rounded-[1.35rem]">
+                <Image
+                  src="/images/premise-main-c.jpg"
+                  alt="Calm senior professional seated at his desk"
+                  fill
+                  sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 42vw, 100vw"
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
           </motion.div>
 
@@ -70,7 +70,7 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="min-w-0 lg:pt-10 xl:pt-14"
+            className="min-w-0"
           >
             <div className="max-w-none space-y-6 text-base leading-[1.9] font-light text-primary/70 sm:text-lg">
               <p>

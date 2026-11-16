@@ -48,8 +48,8 @@ const modules: readonly CurriculumModule[] = [
     title: "Leadership & Well-being Integration",
     subtitle:
       "Translate the practice into performance, resilience, and health.",
-    image: "/images/Pillar-3-Maharishi.png",
-    alt: "Indian executive in a calm and composed professional setting",
+    image: "/images/pillar-3-leadership.jpg",
+    alt: "Leadership team in a calm, attentive discussion",
     imageLabel: "Application",
     imageClassName: "object-center",
     points: [
